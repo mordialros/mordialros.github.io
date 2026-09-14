@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-ASGBD/UT0/index" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.2">
+<title data-rh="true">UT0. Volver a conectar | Apuntes de Informática</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://mordialros.github.io/docs/ASGBD/UT0/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="UT0. Volver a conectar | Apuntes de Informática"><meta data-rh="true" name="description" content="Después de un tiempo sin trabajar con bases de datos, algunos conceptos pueden haberse quedado un poco olvidados."><meta data-rh="true" property="og:description" content="Después de un tiempo sin trabajar con bases de datos, algunos conceptos pueden haberse quedado un poco olvidados."><link data-rh="true" rel="icon" href="/img/estilo/begona.ico"><link data-rh="true" rel="canonical" href="https://mordialros.github.io/docs/ASGBD/UT0/"><link data-rh="true" rel="alternate" href="https://mordialros.github.io/docs/ASGBD/UT0/" hreflang="en"><link data-rh="true" rel="alternate" href="https://mordialros.github.io/docs/ASGBD/UT0/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"UT0. Volver a conectar","item":"https://mordialros.github.io/docs/ASGBD/UT0/"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Apuntes de Informática RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Apuntes de Informática Atom Feed"><link rel="stylesheet" href="/assets/css/styles.6829b966.css">
+<script src="/assets/js/runtime~main.4ddc774b.js" defer="defer"></script>
+<script src="/assets/js/main.2e994822.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/estilo/logoBego.jpg"><link rel="preload" as="image" href="/assets/images/esquema_repaso-a2a8cac55f6c2e4d236ab18b9774b035.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/estilo/logoBego.jpg" alt="Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/estilo/logoBego.jpg" alt="Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Inicio</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/ASGBD/">ASGBD</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/ASGBD/"><span class="linkLabel_WmDU">Administración de Sistemas Gestores de Bases de Datos</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible menu__list-item-collapsible--active"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" aria-current="page" href="/docs/ASGBD/UT0/"><span class="categoryLinkLabel_W154">UT0. Volver a conectar</span></a><button aria-label="Collapse sidebar category &#x27;UT0. Volver a conectar&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ASGBD/UT0/de-la-realidad-a-las-tablas"><span class="linkLabel_WmDU">0.1 De la realidad a las tablas</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ASGBD/UT0/volvemos-a-hablar-sql"><span class="linkLabel_WmDU">0.2 Volvemos a hablar SQL</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ASGBD/UT0/los-datos-estan-relacionados"><span class="linkLabel_WmDU">0.3 Los datos están relacionados</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ASGBD/UT0/todo-o-nada"><span class="linkLabel_WmDU">0.4 Todo o nada</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ASGBD/UT0/practica-guiada"><span class="linkLabel_WmDU">05. Práctica guiada</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">UT0. Volver a conectar</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>🔄 UT0. Volver a conectar</h1></header>
+<p>Después de un tiempo sin trabajar con bases de datos, algunos conceptos pueden haberse quedado un poco olvidados.</p>
+<p>Antes de comenzar con la administración de sistemas gestores de bases de datos, vamos a recuperar los conocimientos fundamentales de <strong>bases de datos relacionales y SQL</strong> que necesitaremos durante el curso.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>No se trata de volver a estudiar todo lo visto en primero.</p><p>El objetivo es <strong>recordar los conceptos esenciales y volver a utilizarlos mediante ejemplos prácticos</strong>.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣-qué-vamos-a-recordar">1️⃣ ¿Qué vamos a recordar?<a href="#1️⃣-qué-vamos-a-recordar" class="hash-link" aria-label="Direct link to 1️⃣ ¿Qué vamos a recordar?" title="Direct link to 1️⃣ ¿Qué vamos a recordar?" translate="no">​</a></h2>
+<ul>
+<li class="">
+<p>Cómo se representa un problema mediante un <strong>modelo entidad-relación</strong>.</p>
+</li>
+<li class="">
+<p>Cómo se transforma ese modelo en <strong>tablas, claves y relaciones</strong>.</p>
+</li>
+<li class="">
+<p>Cómo trabajar con los datos mediante <strong>SQL</strong>.</p>
+</li>
+<li class="">
+<p>Cómo realizar consultas sobre una o varias tablas.</p>
+</li>
+<li class="">
+<p>Cómo obtener información resumida mediante agrupaciones.</p>
+</li>
+<li class="">
+<p>Cómo utilizar subconsultas.</p>
+</li>
+<li class="">
+<p>Cómo modificar los datos de forma segura.</p>
+</li>
+<li class="">
+<p>Cómo utilizar transacciones básicas.</p>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2️⃣-materiales-y-herramientas">2️⃣ Materiales y herramientas<a href="#2️⃣-materiales-y-herramientas" class="hash-link" aria-label="Direct link to 2️⃣ Materiales y herramientas" title="Direct link to 2️⃣ Materiales y herramientas" translate="no">​</a></h2>
+<p>Durante esta unidad utilizaremos distintas herramientas para diseñar, implementar y consultar bases de datos.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-diagramas-er-y-modelo-relacional">🔸 Diagramas E/R y modelo relacional<a href="#-diagramas-er-y-modelo-relacional" class="hash-link" aria-label="Direct link to 🔸 Diagramas E/R y modelo relacional" title="Direct link to 🔸 Diagramas E/R y modelo relacional" translate="no">​</a></h3>
+<p>Para representar gráficamente el diseño utilizaremos <strong>diagrams.net (draw.io)</strong>.</p>
+<p>Nos permitirá crear:</p>
+<ul>
+<li class="">entidades, atributos y relaciones;</li>
+<li class="">cardinalidades;</li>
+<li class="">tablas y columnas;</li>
+<li class="">claves primarias y foráneas;</li>
+<li class="">relaciones entre tablas.</li>
+</ul>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Guarda también el archivo editable</div><div class="admonitionContent_BuS1"><p>Además de exportar el diagrama como imagen, guarda el archivo original de diagrams.net (<code>.drawio</code>).</p><p>Así podrás modificarlo posteriormente sin tener que volver a construirlo.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-mysql-server">🔸 MySQL Server<a href="#-mysql-server" class="hash-link" aria-label="Direct link to 🔸 MySQL Server" title="Direct link to 🔸 MySQL Server" translate="no">​</a></h3>
+<p>Utilizaremos <strong>MySQL Server</strong> como sistema gestor de bases de datos.</p>
+<p>Será el encargado de:</p>
+<ul>
+<li class="">almacenar las bases de datos;</li>
+<li class="">ejecutar las instrucciones SQL;</li>
+<li class="">comprobar las restricciones;</li>
+<li class="">mantener las relaciones entre los datos;</li>
+<li class="">y gestionar las transacciones.</li>
+</ul>
+<p>Para Windows, puede instalarse utilizando <strong>MySQL Installer</strong>, que permite instalar y configurar los distintos componentes de MySQL.</p>
+<p>👉 <a href="https://dev.mysql.com/downloads/installer/" target="_blank" rel="noopener noreferrer" class="">Descargar MySQL Installer para Windows</a></p>
+<p>También puede descargarse MySQL Community Server directamente desde:</p>
+<p>👉 <a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener noreferrer" class="">Descargar MySQL Community Server</a></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-mysql-workbench">🔸 MySQL Workbench<a href="#-mysql-workbench" class="hash-link" aria-label="Direct link to 🔸 MySQL Workbench" title="Direct link to 🔸 MySQL Workbench" translate="no">​</a></h3>
+<p>Utilizaremos <strong>MySQL Workbench</strong> como herramienta gráfica para conectarnos a MySQL Server y trabajar con las bases de datos.</p>
+<p>Desde Workbench podremos:</p>
+<ul>
+<li class="">crear bases de datos y tablas;</li>
+<li class="">ejecutar instrucciones SQL;</li>
+<li class="">consultar y modificar datos;</li>
+<li class="">comprobar la estructura de las tablas;</li>
+<li class="">revisar claves primarias y foráneas;</li>
+<li class="">y trabajar con transacciones.</li>
+</ul>
+<p>👉 <a href="https://dev.mysql.com/downloads/workbench/" target="_blank" rel="noopener noreferrer" class="">Descargar MySQL Workbench</a></p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Recuerda</div><div class="admonitionContent_BuS1"><p><strong>SQL</strong> es el lenguaje que utilizamos para indicar qué queremos hacer.</p><p><strong>MySQL Server</strong> es el SGBD que almacena los datos y ejecuta las instrucciones.</p><p><strong>MySQL Workbench</strong> es la herramienta gráfica desde la que trabajaremos con el servidor.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3️⃣-cómo-se-organiza-el-repaso">3️⃣ ¿Cómo se organiza el repaso?<a href="#3️⃣-cómo-se-organiza-el-repaso" class="hash-link" aria-label="Direct link to 3️⃣ ¿Cómo se organiza el repaso?" title="Direct link to 3️⃣ ¿Cómo se organiza el repaso?" translate="no">​</a></h2>
+<p>Recorreremos de nuevo el proceso completo, desde el diseño de una base de datos hasta el trabajo con los datos almacenados.</p>
+<div style="text-align:center;margin:2rem 0"><img src="/assets/images/esquema_repaso-a2a8cac55f6c2e4d236ab18b9774b035.png" alt="Recorrido del repaso de la UT0" style="width:90%;max-width:700px;height:auto;border-radius:14px"></div>
+<p>El repaso se divide en cuatro bloques:</p>
+<ul>
+<li class="">
+<p><strong>0.1 De la realidad a las tablas</strong><br>
+<!-- -->Recuperaremos el modelo E/R, su transformación al modelo relacional y las restricciones.</p>
+</li>
+<li class="">
+<p><strong>0.2 Volvemos a hablar SQL</strong><br>
+<!-- -->Recordaremos cómo crear la estructura de una base de datos, insertar datos, consultarlos, modificarlos y eliminarlos.</p>
+</li>
+<li class="">
+<p><strong>0.3 Los datos están relacionados</strong><br>
+<!-- -->Volveremos a trabajar con consultas sobre varias tablas, funciones de agregación, agrupaciones y subconsultas.</p>
+</li>
+<li class="">
+<p><strong>0.4 Todo o nada</strong><br>
+<!-- -->Recuperaremos el concepto de transacción y el uso de <code>COMMIT</code> y <code>ROLLBACK</code>.</p>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4️⃣-práctica-guiada">4️⃣ Práctica guiada<a href="#4️⃣-práctica-guiada" class="hash-link" aria-label="Direct link to 4️⃣ Práctica guiada" title="Direct link to 4️⃣ Práctica guiada" translate="no">​</a></h2>
+<p>Los ejemplos de los distintos apartados nos servirán para recordar la sintaxis y comprender cada concepto.</p>
+<p>Las actividades de aplicación se reunirán en un apartado específico de <strong>práctica guiada</strong>, en el que trabajaremos sobre un mismo caso práctico.</p>
+<p>A partir de ese caso recorreremos de nuevo todo el proceso:</p>
+<p><strong>Problema → modelo E/R → modelo relacional → MySQL → datos → consultas → transacciones</strong></p>
+<p>La práctica estará organizada de forma progresiva, de manera que cada actividad permitirá aplicar los contenidos recuperados en los distintos apartados de la unidad.</p>
+<p>Así podremos trabajar de forma integrada:</p>
+<ul>
+<li class="">el diseño de la base de datos;</li>
+<li class="">la creación de tablas y restricciones;</li>
+<li class="">la inserción de datos;</li>
+<li class="">las consultas sobre una y varias tablas;</li>
+<li class="">las agrupaciones y subconsultas;</li>
+<li class="">la modificación de datos;</li>
+<li class="">y el uso de transacciones.</li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Los apartados teóricos se centrarán en <strong>recordar y comprender los conceptos</strong>.</p><p>La práctica guiada será el espacio en el que <strong>aplicaremos todo lo aprendido sobre un mismo caso</strong>.</p></div></div></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/ASGBD/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Administración de Sistemas Gestores de Bases de Datos</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/ASGBD/UT0/de-la-realidad-a-las-tablas"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">0.1 De la realidad a las tablas</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-qué-vamos-a-recordar" class="table-of-contents__link toc-highlight">1️⃣ ¿Qué vamos a recordar?</a></li><li><a href="#2️⃣-materiales-y-herramientas" class="table-of-contents__link toc-highlight">2️⃣ Materiales y herramientas</a><ul><li><a href="#-diagramas-er-y-modelo-relacional" class="table-of-contents__link toc-highlight">🔸 Diagramas E/R y modelo relacional</a></li><li><a href="#-mysql-server" class="table-of-contents__link toc-highlight">🔸 MySQL Server</a></li><li><a href="#-mysql-workbench" class="table-of-contents__link toc-highlight">🔸 MySQL Workbench</a></li></ul></li><li><a href="#3️⃣-cómo-se-organiza-el-repaso" class="table-of-contents__link toc-highlight">3️⃣ ¿Cómo se organiza el repaso?</a></li><li><a href="#4️⃣-práctica-guiada" class="table-of-contents__link toc-highlight">4️⃣ Práctica guiada</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mordialros.github.io/">Apuntes de informática</a> by <span property="cc:attributionName">Begoña Ordiales Rosado</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+        <div style="text-align:center;"> 
+          <p style="margin-top:8px;">
+              <a href="mailto:mordialros@educacion.navarra.es">📧 mordialros@educacion.navarra.es</a>
+          </p>
+        </div></div></div></div></footer></div>
+</body>
+</html>
