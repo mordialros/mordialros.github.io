@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">05. Práctica guiada | Apuntes de Informática</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://mordialros.github.io/docs/ASGBD/UT0/practica-guiada"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="05. Práctica guiada | Apuntes de Informática"><meta data-rh="true" name="description" content="En esta práctica aplicaremos de forma progresiva los contenidos recuperados en la UT0 sobre un mismo caso."><meta data-rh="true" property="og:description" content="En esta práctica aplicaremos de forma progresiva los contenidos recuperados en la UT0 sobre un mismo caso."><link data-rh="true" rel="icon" href="/img/estilo/begona.ico"><link data-rh="true" rel="canonical" href="https://mordialros.github.io/docs/ASGBD/UT0/practica-guiada"><link data-rh="true" rel="alternate" href="https://mordialros.github.io/docs/ASGBD/UT0/practica-guiada" hreflang="en"><link data-rh="true" rel="alternate" href="https://mordialros.github.io/docs/ASGBD/UT0/practica-guiada" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"UT0. Volver a conectar","item":"https://mordialros.github.io/docs/ASGBD/UT0/"},{"@type":"ListItem","position":2,"name":"05. Práctica guiada","item":"https://mordialros.github.io/docs/ASGBD/UT0/practica-guiada"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Apuntes de Informática RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Apuntes de Informática Atom Feed"><link rel="stylesheet" href="/assets/css/styles.1aaae213.css">
-<script src="/assets/js/runtime~main.6a90e76e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.fa5c2c5d.js" defer="defer"></script>
 <script src="/assets/js/main.7e35aed5.js" defer="defer"></script>
 </head>
 <body>
@@ -53,68 +53,48 @@
 <p>Realiza el diagrama utilizando <strong>diagrams.net (draw.io)</strong>.</p>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Guarda el archivo editable</div><div class="admonitionContent_BuS1"><p>Conserva el archivo <code>.drawio</code> además de la imagen exportada. Lo necesitaremos si tenemos que modificar el diseño.</p></div></div>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-3-transformamos-al-modelo-relacional">🔸 Actividad 3. Transformamos al modelo relacional<a href="#-actividad-3-transformamos-al-modelo-relacional" class="hash-link" aria-label="Direct link to 🔸 Actividad 3. Transformamos al modelo relacional" title="Direct link to 🔸 Actividad 3. Transformamos al modelo relacional" translate="no">​</a></h3>
-<p>Transforma el diagrama E/R del <strong>Centro Cívico La Estación</strong> en su correspondiente <strong>modelo relacional</strong>.</p>
-<p>Para cada tabla, indica:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-3-definimos-el-modelo-relacional">🔸 Actividad 3. Definimos el modelo relacional<a href="#-actividad-3-definimos-el-modelo-relacional" class="hash-link" aria-label="Direct link to 🔸 Actividad 3. Definimos el modelo relacional" title="Direct link to 🔸 Actividad 3. Definimos el modelo relacional" translate="no">​</a></h3>
+<p>A partir del modelo E/R que has elaborado para el <strong>Centro Cívico La Estación</strong>, construye su correspondiente <strong>modelo relacional</strong>.</p>
+<p>Para cada tabla deberás indicar:</p>
 <ul>
-<li class="">nombre de la tabla;</li>
-<li class="">columnas;</li>
-<li class="">clave primaria;</li>
-<li class="">claves foráneas.</li>
+<li class="">su nombre;</li>
+<li class="">las columnas que la forman;</li>
+<li class="">el tipo de dato que almacenará cada columna;</li>
+<li class="">la clave primaria;</li>
+<li class="">las claves foráneas;</li>
+<li class="">y las restricciones necesarias.</li>
 </ul>
-<p>Comprueba también que:</p>
-<p>☐ Todas las entidades se han convertido en tablas.</p>
-<p>☐ Cada tabla tiene una clave primaria.</p>
-<p>☐ Las relaciones 1<!-- -->:N<!-- --> están representadas mediante una clave foránea.</p>
-<p>☐ Las relaciones N<!-- -->:M<!-- --> se han convertido en una tabla intermedia.</p>
-<p>☐ Los atributos propios de las relaciones se han trasladado correctamente.</p>
-<hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-4-definimos-las-restricciones">🔸 Actividad 4. Definimos las restricciones<a href="#-actividad-4-definimos-las-restricciones" class="hash-link" aria-label="Direct link to 🔸 Actividad 4. Definimos las restricciones" title="Direct link to 🔸 Actividad 4. Definimos las restricciones" translate="no">​</a></h3>
-<p>Vuelve al modelo relacional y decide qué restricciones deben aplicarse a sus columnas.</p>
-<p>Debes valorar, cuando corresponda:</p>
+<div class="subtitulo-herramientas">Plantilla de trabajo</div>
+<p>Utiliza la siguiente plantilla para documentar cada una de las tablas de tu modelo.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="tabla-__________________________________________________________________________________________________">Tabla: __________________________________________________________________________________________________<a href="#tabla-__________________________________________________________________________________________________" class="hash-link" aria-label="Direct link to Tabla: __________________________________________________________________________________________________" title="Direct link to Tabla: __________________________________________________________________________________________________" translate="no">​</a></h4>
+<table><thead><tr><th>Columna</th><th>Tipo de dato</th><th>PK</th><th>FK / Referencia</th><th>NOT NULL</th><th>UNIQUE</th><th>CHECK</th><th>DEFAULT</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<p><strong>Restricciones o decisiones que necesitan explicación:</strong></p>
 <ul>
-<li class=""><code>PRIMARY KEY</code>;</li>
-<li class=""><code>FOREIGN KEY</code>;</li>
-<li class=""><code>NOT NULL</code>;</li>
-<li class=""><code>UNIQUE</code>;</li>
-<li class=""><code>CHECK</code>;</li>
-<li class=""><code>DEFAULT</code>.</li>
+<li class=""></li>
+<li class=""></li>
 </ul>
-<p>Para cada decisión, no basta con indicar la restricción: <strong>justifica qué situación incorrecta o incoherente pretende evitar</strong>.</p>
-<p>Puedes ayudarte de estas preguntas:</p>
-<ol>
-<li class="">¿Qué datos deben ser obligatorios?</li>
-<li class="">¿Qué valores no deberían poder repetirse?</li>
-<li class="">¿Qué valores deben cumplir alguna condición?</li>
-<li class="">¿Existe algún dato para el que tenga sentido definir un valor por defecto?</li>
-</ol>
-<hr>
+<p>Repite la plantilla para cada tabla necesaria.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Antes de continuar</div><div class="admonitionContent_BuS1"><p>Comprueba:</p><p>☐ Todas las entidades se han convertido en tablas.</p><p>☐ Cada tabla tiene una clave primaria.</p><p>☐ Se ha indicado un tipo de dato adecuado para cada columna.</p><p>☐ Las relaciones están correctamente representadas.</p><p>☐ Se han definido las restricciones necesarias.</p><p>☐ El modelo permite representar las reglas indicadas en el enunciado.</p></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2️⃣-volvemos-a-hablar-sql">2️⃣ Volvemos a hablar SQL<a href="#2️⃣-volvemos-a-hablar-sql" class="hash-link" aria-label="Direct link to 2️⃣ Volvemos a hablar SQL" title="Direct link to 2️⃣ Volvemos a hablar SQL" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-5-creamos-la-base-de-datos-en-mysql">🔸 Actividad 5. Creamos la base de datos en MySQL<a href="#-actividad-5-creamos-la-base-de-datos-en-mysql" class="hash-link" aria-label="Direct link to 🔸 Actividad 5. Creamos la base de datos en MySQL" title="Direct link to 🔸 Actividad 5. Creamos la base de datos en MySQL" translate="no">​</a></h3>
-<p>Implementa en <strong>MySQL</strong> el modelo relacional que has diseñado.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-4-creamos-la-base-de-datos-en-mysql">🔸 Actividad 4. Creamos la base de datos en MySQL<a href="#-actividad-4-creamos-la-base-de-datos-en-mysql" class="hash-link" aria-label="Direct link to 🔸 Actividad 4. Creamos la base de datos en MySQL" title="Direct link to 🔸 Actividad 4. Creamos la base de datos en MySQL" translate="no">​</a></h3>
+<p>Implementa en <strong>MySQL</strong> el modelo relacional definido en la actividad anterior.</p>
 <p>Debes:</p>
 <ol>
 <li class="">crear una base de datos para almacenar la información del centro;</li>
 <li class="">seleccionar la base de datos sobre la que vas a trabajar;</li>
 <li class="">crear todas las tablas necesarias;</li>
-<li class="">elegir el tipo de dato adecuado para cada columna;</li>
-<li class="">definir las claves primarias;</li>
-<li class="">añadir las claves foráneas;</li>
-<li class="">incorporar las restricciones decididas en la actividad anterior;</li>
-<li class="">respetar el orden de creación de las tablas según sus dependencias.</li>
+<li class="">utilizar los tipos de datos de MySQL adecuados para implementar los definidos en el modelo relacional;</li>
+<li class="">implementar las claves primarias, claves foráneas y restricciones;</li>
+<li class="">utilizar <code>AUTO_INCREMENT</code> en los identificadores numéricos cuando corresponda;</li>
+<li class="">respetar las dependencias entre las tablas al decidir el orden de creación.</li>
 </ol>
-<p>Al terminar, utiliza <strong>MySQL Workbench</strong> para comprobar:</p>
-<p>☐ Tablas creadas.</p>
-<p>☐ Columnas y tipos de datos.</p>
-<p>☐ Claves primarias.</p>
-<p>☐ Claves foráneas.</p>
-<p>☐ Restricciones.</p>
+<p>Al terminar, comprueba en <strong>MySQL Workbench</strong> que la estructura creada coincide con el modelo relacional.</p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Conserva el script</div><div class="admonitionContent_BuS1"><p>Guarda las instrucciones utilizadas para crear la base de datos y las tablas. Seguiremos trabajando sobre ellas durante el resto de la práctica.</p></div></div>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-6-insertamos-los-datos">🔸 Actividad 6. Insertamos los datos<a href="#-actividad-6-insertamos-los-datos" class="hash-link" aria-label="Direct link to 🔸 Actividad 6. Insertamos los datos" title="Direct link to 🔸 Actividad 6. Insertamos los datos" translate="no">​</a></h3>
-<p>Introduce datos suficientes para poder realizar las actividades posteriores.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-5-insertamos-los-datos">🔸 Actividad 5. Insertamos los datos<a href="#-actividad-5-insertamos-los-datos" class="hash-link" aria-label="Direct link to 🔸 Actividad 5. Insertamos los datos" title="Direct link to 🔸 Actividad 5. Insertamos los datos" translate="no">​</a></h3>
+<p>Introduce los siguientes datos en la base de datos.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Atención al formato de los datos</div><div class="admonitionContent_BuS1"><p>Los datos están escritos en un formato fácil de leer.</p><p>Al preparar las instrucciones, comprueba que cada valor utiliza el <strong>formato adecuado para el tipo de dato definido en MySQL</strong>.</p></div></div>
 <div class="subtitulo-herramientas">Tipos de actividad</div>
-<p>Utiliza los siguientes:</p>
 <ul>
 <li class="">Naturaleza</li>
 <li class="">Música</li>
@@ -122,7 +102,6 @@
 <li class="">Actividades deportivas</li>
 </ul>
 <div class="subtitulo-herramientas">Actividades</div>
-<p>Introduce estas actividades:</p>
 <ul>
 <li class=""><strong>Ruta de senderismo</strong> — Naturaleza — 03/10/2026 — Parque del Río — 20 plazas</li>
 <li class=""><strong>Taller de orientación</strong> — Naturaleza — 17/10/2026 — Parque Municipal — 15 plazas</li>
@@ -134,168 +113,210 @@
 <li class=""><strong>Sesión de calistenia</strong> — Actividades deportivas — 24/10/2026 — Zona deportiva exterior — 18 plazas</li>
 <li class=""><strong>Reto solidario de kilómetros en bicicleta estática</strong> — Actividades deportivas — 14/11/2026 — Gimnasio municipal — 25 plazas</li>
 </ul>
-<div class="subtitulo-herramientas">Usuarios e inscripciones</div>
-<p>Elige los datos de los usuarios y de las inscripciones.</p>
-<p>Procura que permitan encontrar situaciones diferentes al realizar consultas:</p>
+<div class="subtitulo-herramientas">Usuarios</div>
 <ul>
-<li class="">usuarios inscritos en varias actividades;</li>
-<li class="">actividades con varios usuarios inscritos;</li>
-<li class="">usuarios que todavía no se hayan inscrito en ninguna actividad;</li>
-<li class="">actividades que todavía no tengan ninguna inscripción;</li>
-<li class="">inscripciones realizadas en fechas diferentes.</li>
+<li class=""><strong>Ana López</strong> — <a href="mailto:ana.lopez@correo.es" target="_blank" rel="noopener noreferrer" class="">ana.lopez@correo.es</a> — 600111111</li>
+<li class=""><strong>Marta Ruiz</strong> — <a href="mailto:marta.ruiz@correo.es" target="_blank" rel="noopener noreferrer" class="">marta.ruiz@correo.es</a> — 600222222</li>
+<li class=""><strong>Diego Sánchez</strong> — <a href="mailto:diego.sanchez@correo.es" target="_blank" rel="noopener noreferrer" class="">diego.sanchez@correo.es</a> — 600333333</li>
+<li class=""><strong>Lucía Moreno</strong> — <a href="mailto:lucia.moreno@correo.es" target="_blank" rel="noopener noreferrer" class="">lucia.moreno@correo.es</a> — 600444444</li>
+<li class=""><strong>Marcos Gil</strong> — <a href="mailto:marcos.gil@correo.es" target="_blank" rel="noopener noreferrer" class="">marcos.gil@correo.es</a> — 600555555</li>
+<li class=""><strong>Sara Pérez</strong> — <a href="mailto:sara.perez@correo.es" target="_blank" rel="noopener noreferrer" class="">sara.perez@correo.es</a> — 600666666</li>
 </ul>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Antes de insertar</div><div class="admonitionContent_BuS1"><p>Decide primero <strong>en qué orden deben introducirse los datos</strong> teniendo en cuenta las claves foráneas.</p></div></div>
+<div class="subtitulo-herramientas">Inscripciones</div>
+<p>Registra las siguientes inscripciones:</p>
+<ul>
+<li class="">Ana López — Ruta de senderismo — 20/09/2026</li>
+<li class="">Ana López — Iniciación a la mezcla DJ — 22/09/2026</li>
+<li class="">Ana López — Torneo de fútbol sala — 25/09/2026</li>
+<li class="">Marta Ruiz — Ruta de senderismo — 21/09/2026</li>
+<li class="">Marta Ruiz — Taller de orientación — 25/09/2026</li>
+<li class="">Marta Ruiz — Sesión práctica de DJ — 15/10/2026</li>
+<li class="">Marta Ruiz — Sesión de calistenia — 18/10/2026</li>
+<li class="">Diego Sánchez — Ruta de senderismo — 22/09/2026</li>
+<li class="">Diego Sánchez — Torneo de videojuegos — 01/10/2026</li>
+<li class="">Lucía Moreno — Taller de orientación — 26/09/2026</li>
+<li class="">Lucía Moreno — Sesión práctica de DJ — 16/10/2026</li>
+<li class="">Lucía Moreno — Reto solidario de kilómetros en bicicleta estática — 20/10/2026</li>
+<li class="">Marcos Gil — Iniciación a la mezcla DJ — 23/09/2026</li>
+<li class="">Marcos Gil — Torneo de fútbol sala — 28/09/2026</li>
+<li class="">Marcos Gil — Reto solidario de kilómetros en bicicleta estática — 21/10/2026</li>
+</ul>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Antes de continuar</div><div class="admonitionContent_BuS1"><p>Comprueba que todos los datos se han insertado correctamente.</p><p>El conjunto de datos está preparado para utilizarse en las actividades posteriores, por lo que <strong>no añadas, modifiques ni elimines registros por tu cuenta</strong>.</p></div></div>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-7-consultamos-y-filtramos-información">🔸 Actividad 7. Consultamos y filtramos información<a href="#-actividad-7-consultamos-y-filtramos-información" class="hash-link" aria-label="Direct link to 🔸 Actividad 7. Consultamos y filtramos información" title="Direct link to 🔸 Actividad 7. Consultamos y filtramos información" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-6-consultamos-y-filtramos-información">🔸 Actividad 6. Consultamos y filtramos información<a href="#-actividad-6-consultamos-y-filtramos-información" class="hash-link" aria-label="Direct link to 🔸 Actividad 6. Consultamos y filtramos información" title="Direct link to 🔸 Actividad 6. Consultamos y filtramos información" translate="no">​</a></h3>
 <p>Escribe consultas que permitan obtener:</p>
 <ol>
-<li class="">todos los datos almacenados de los usuarios;</li>
-<li class="">únicamente el nombre y el correo electrónico de los usuarios;</li>
-<li class="">el nombre, la fecha, el lugar y el número de plazas de todas las actividades;</li>
-<li class="">los distintos lugares en los que se realizan actividades, sin repetir valores;</li>
-<li class="">las actividades que tengan más de 15 plazas;</li>
-<li class="">las actividades que se realicen durante octubre de 2026;</li>
-<li class="">las actividades cuyo nombre contenga la palabra <code>Taller</code>;</li>
-<li class="">las actividades que se realicen en dos lugares diferentes que elijas;</li>
-<li class="">las actividades que tengan más de 15 plazas <strong>y</strong> se celebren durante octubre;</li>
-<li class="">las actividades que no se celebren en el <code>Aula de música</code>;</li>
-<li class="">alguna de las consultas anteriores utilizando alias para que los encabezados resulten más claros.</li>
+<li class="">todos los datos almacenados de los usuarios</li>
+<li class="">únicamente el nombre y el correo electrónico de los usuarios</li>
+<li class="">el nombre, la fecha, el lugar y el número de plazas de todas las actividades</li>
+<li class="">los distintos lugares en los que se realizan actividades, sin repetir valores</li>
+<li class="">las actividades que tengan más de 15 plazas</li>
+<li class="">las actividades que se realicen durante octubre de 2026</li>
+<li class="">las actividades cuyo nombre contenga la palabra <code>Taller</code></li>
+<li class="">las actividades que se realicen en el <code>Aula de música</code> o en el <code>Aula de informática</code></li>
+<li class="">las actividades que tengan más de 15 plazas y se celebren durante octubre</li>
+<li class="">las actividades que no se celebren en el <code>Aula de música</code></li>
+<li class="">alguna de las consultas anteriores utilizando alias para que los encabezados de las columnas resulten más claros</li>
 </ol>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Antes de escribir cada consulta</div><div class="admonitionContent_BuS1"><p>Identifica:</p><ul>
-<li class="">qué información necesitas mostrar;</li>
-<li class="">de qué tabla procede;</li>
-<li class="">qué columnas necesitas;</li>
-<li class="">qué condición deben cumplir las filas.</li>
-</ul></div></div>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-8-ordenamos-y-limitamos-resultados">🔸 Actividad 8. Ordenamos y limitamos resultados<a href="#-actividad-8-ordenamos-y-limitamos-resultados" class="hash-link" aria-label="Direct link to 🔸 Actividad 8. Ordenamos y limitamos resultados" title="Direct link to 🔸 Actividad 8. Ordenamos y limitamos resultados" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-7-ordenamos-y-limitamos-resultados">🔸 Actividad 7. Ordenamos y limitamos resultados<a href="#-actividad-7-ordenamos-y-limitamos-resultados" class="hash-link" aria-label="Direct link to 🔸 Actividad 7. Ordenamos y limitamos resultados" title="Direct link to 🔸 Actividad 7. Ordenamos y limitamos resultados" translate="no">​</a></h3>
 <p>Escribe consultas que permitan:</p>
 <ol>
-<li class="">mostrar las actividades ordenadas alfabéticamente por su nombre;</li>
-<li class="">mostrar las actividades ordenadas por fecha, comenzando por la más próxima;</li>
-<li class="">mostrar las actividades ordenadas de mayor a menor número de plazas;</li>
-<li class="">mostrar las actividades ordenadas primero por lugar y después por fecha;</li>
-<li class="">mostrar únicamente las tres actividades con mayor número de plazas;</li>
-<li class="">mostrar las dos actividades que se celebrarán primero;</li>
-<li class="">mostrar las actividades de octubre ordenadas por fecha;</li>
-<li class="">mostrar las actividades con más de 15 plazas ordenadas de mayor a menor capacidad.</li>
+<li class="">mostrar las actividades ordenadas alfabéticamente por su nombre</li>
+<li class="">mostrar las actividades ordenadas por fecha, comenzando por la más próxima</li>
+<li class="">mostrar las actividades ordenadas de mayor a menor número de plazas</li>
+<li class="">mostrar las actividades ordenadas primero por lugar y después por fecha</li>
+<li class="">mostrar únicamente las tres actividades con mayor número de plazas</li>
+<li class="">mostrar las dos actividades que se celebrarán primero</li>
+<li class="">mostrar las actividades de octubre ordenadas por fecha</li>
+<li class="">mostrar las actividades con más de 15 plazas ordenadas de mayor a menor capacidad</li>
 </ol>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-9-modificamos-y-eliminamos-datos">🔸 Actividad 9. Modificamos y eliminamos datos<a href="#-actividad-9-modificamos-y-eliminamos-datos" class="hash-link" aria-label="Direct link to 🔸 Actividad 9. Modificamos y eliminamos datos" title="Direct link to 🔸 Actividad 9. Modificamos y eliminamos datos" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-8-modificamos-y-eliminamos-datos">🔸 Actividad 8. Modificamos y eliminamos datos<a href="#-actividad-8-modificamos-y-eliminamos-datos" class="hash-link" aria-label="Direct link to 🔸 Actividad 8. Modificamos y eliminamos datos" title="Direct link to 🔸 Actividad 8. Modificamos y eliminamos datos" translate="no">​</a></h3>
+<p>Para estas operaciones utilizaremos <strong>registros de prueba</strong>, de forma que el conjunto de datos de las actividades anteriores permanezca intacto.</p>
 <div class="subtitulo-herramientas">Modificamos datos</div>
-<p>Antes de cada <code>UPDATE</code>, ejecuta un <code>SELECT</code> con la misma condición para comprobar qué filas se van a modificar.</p>
-<p>Después realiza estas operaciones:</p>
 <ol>
-<li class="">cambia el número máximo de plazas de <strong>Ruta de senderismo</strong> a 25;</li>
-<li class="">cambia el lugar de <strong>Sesión práctica de DJ</strong> a <code>Sala multimedia</code>;</li>
-<li class="">modifica la fecha de <strong>Torneo de videojuegos</strong> al 29/10/2026;</li>
-<li class="">aumenta a 20 las plazas de <strong>Sesión de calistenia</strong>;</li>
-<li class="">modifica alguno de los datos de un usuario que hayas introducido.</li>
+<li class="">
+<p>Añade una nueva actividad con estos datos:</p>
+<p><strong>Actividad de prueba</strong> — Naturaleza — 01/12/2026 — Sala de prueba — 10 plazas</p>
+</li>
+<li class="">
+<p>Comprueba que se ha insertado correctamente</p>
+</li>
+<li class="">
+<p>Cambia el lugar a <code>Sala multimedia</code></p>
+</li>
+<li class="">
+<p>Cambia también el número máximo de plazas a 20</p>
+</li>
+<li class="">
+<p>Comprueba que los cambios se han realizado correctamente</p>
+</li>
 </ol>
-<p>Después de cada modificación, vuelve a consultar los datos para comprobar el resultado.</p>
 <div class="subtitulo-herramientas">Eliminamos datos</div>
-<p>Antes de cada <code>DELETE</code>, ejecuta un <code>SELECT</code> con la misma condición.</p>
-<p>Después:</p>
 <ol>
-<li class="">elimina una de las inscripciones que hayas creado anteriormente;</li>
-<li class="">comprueba que se ha eliminado correctamente;</li>
-<li class="">intenta eliminar un usuario que todavía tenga alguna inscripción asociada y observa qué ocurre;</li>
-<li class="">elimina primero las inscripciones necesarias y, a continuación, elimina ese usuario;</li>
-<li class="">elimina alguna actividad que ya no vaya a realizarse, teniendo en cuenta las relaciones existentes con otras tablas.</li>
+<li class="">
+<p>Elimina la <strong>Actividad de prueba</strong> y comprueba que ha desaparecido</p>
+</li>
+<li class="">
+<p>Añade este usuario de prueba:</p>
+<p><strong>Usuario Prueba</strong> — <a href="mailto:usuario.prueba@correo.es" target="_blank" rel="noopener noreferrer" class="">usuario.prueba@correo.es</a> — 600999999</p>
+</li>
+<li class="">
+<p>Inscribe a <strong>Usuario Prueba</strong> en <strong>Ruta de senderismo</strong> con fecha 30/09/2026</p>
+</li>
+<li class="">
+<p>Intenta eliminar el usuario mientras mantiene esa inscripción y observa qué ocurre</p>
+</li>
+<li class="">
+<p>Elimina la inscripción del usuario de prueba</p>
+</li>
+<li class="">
+<p>Elimina después el usuario</p>
+</li>
+<li class="">
+<p>Comprueba que ambos registros han desaparecido</p>
+</li>
 </ol>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Antes de eliminar</div><div class="admonitionContent_BuS1"><p>Comprueba siempre si existen otras tablas que hagan referencia al registro que quieres eliminar.</p></div></div>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Mantén intactos los datos de trabajo</div><div class="admonitionContent_BuS1"><p>Al terminar esta actividad, la base de datos debe conservar exactamente los usuarios, actividades e inscripciones definidos en la <strong>Actividad 5</strong>.</p></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3️⃣-los-datos-están-relacionados">3️⃣ Los datos están relacionados<a href="#3️⃣-los-datos-están-relacionados" class="hash-link" aria-label="Direct link to 3️⃣ Los datos están relacionados" title="Direct link to 3️⃣ Los datos están relacionados" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-10-relacionamos-varias-tablas">🔸 Actividad 10. Relacionamos varias tablas<a href="#-actividad-10-relacionamos-varias-tablas" class="hash-link" aria-label="Direct link to 🔸 Actividad 10. Relacionamos varias tablas" title="Direct link to 🔸 Actividad 10. Relacionamos varias tablas" translate="no">​</a></h3>
-<p>Utiliza las relaciones del modelo para escribir consultas con <code>JOIN</code>.</p>
-<p>Obtén:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-9-relacionamos-varias-tablas">🔸 Actividad 9. Relacionamos varias tablas<a href="#-actividad-9-relacionamos-varias-tablas" class="hash-link" aria-label="Direct link to 🔸 Actividad 9. Relacionamos varias tablas" title="Direct link to 🔸 Actividad 9. Relacionamos varias tablas" translate="no">​</a></h3>
+<p>Realiza las siguientes consultas utilizando las relaciones entre las tablas:</p>
 <ol>
-<li class="">el nombre de cada actividad junto con el nombre de su tipo;</li>
-<li class="">el nombre de cada usuario junto con las actividades en las que está inscrito;</li>
-<li class="">el nombre de la actividad, el nombre del usuario y la fecha en la que realizó la inscripción;</li>
-<li class="">todas las actividades, aunque todavía no tengan ninguna inscripción;</li>
-<li class="">todos los usuarios, aunque todavía no se hayan inscrito en ninguna actividad;</li>
-<li class="">únicamente las actividades que todavía no tengan usuarios inscritos;</li>
-<li class="">únicamente los usuarios que todavía no tengan ninguna inscripción.</li>
+<li class="">Muestra el nombre de cada actividad junto con el nombre de su tipo.</li>
+<li class="">Muestra el nombre de cada usuario junto con las actividades en las que está inscrito.</li>
+<li class="">Muestra el nombre de la actividad, su tipo, el nombre del usuario y la fecha en la que realizó la inscripción.</li>
+<li class="">Muestra todas las actividades, aunque no tengan ningún usuario inscrito.</li>
+<li class="">Muestra todos los usuarios, aunque no estén inscritos en ninguna actividad.</li>
+<li class="">Muestra únicamente las actividades que no tengan usuarios inscritos.</li>
+<li class="">Muestra únicamente los usuarios que no tengan ninguna inscripción.</li>
 </ol>
-<p>En las consultas que lo necesiten, utiliza alias para que resulten fáciles de leer.</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Sigue las relaciones del modelo</div><div class="admonitionContent_BuS1"><p>Antes de escribir cada <code>JOIN</code>, localiza qué tablas necesitas y qué claves permiten pasar de una a otra.</p></div></div>
+<p>Utiliza <strong>alias</strong> para que las consultas resulten más fáciles de leer.</p>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-11-resumimos-y-agrupamos-información">🔸 Actividad 11. Resumimos y agrupamos información<a href="#-actividad-11-resumimos-y-agrupamos-información" class="hash-link" aria-label="Direct link to 🔸 Actividad 11. Resumimos y agrupamos información" title="Direct link to 🔸 Actividad 11. Resumimos y agrupamos información" translate="no">​</a></h3>
-<p>Utiliza funciones de agregación y <code>GROUP BY</code> para obtener:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-10-resumimos-y-agrupamos-información">🔸 Actividad 10. Resumimos y agrupamos información<a href="#-actividad-10-resumimos-y-agrupamos-información" class="hash-link" aria-label="Direct link to 🔸 Actividad 10. Resumimos y agrupamos información" title="Direct link to 🔸 Actividad 10. Resumimos y agrupamos información" translate="no">​</a></h3>
+<p>Realiza las siguientes consultas utilizando funciones de agregación, <code>GROUP BY</code> y <code>HAVING</code>.</p>
+<div class="subtitulo-herramientas">Funciones de agregación</div>
 <ol>
-<li class="">el número total de usuarios;</li>
-<li class="">el número total de actividades;</li>
-<li class="">el número total de inscripciones;</li>
-<li class="">el número de actividades de cada tipo;</li>
-<li class="">el número de usuarios inscritos en cada actividad;</li>
-<li class="">el número de actividades en las que está inscrito cada usuario;</li>
-<li class="">la media de plazas máximas de las actividades;</li>
-<li class="">la actividad con mayor número de plazas;</li>
-<li class="">la actividad con menor número de plazas;</li>
-<li class="">únicamente los tipos que tengan más de dos actividades;</li>
-<li class="">únicamente las actividades que tengan más de dos usuarios inscritos.</li>
+<li class="">Obtén el número total de usuarios.</li>
+<li class="">Obtén el número total de actividades.</li>
+<li class="">Obtén el número total de inscripciones.</li>
+<li class="">Calcula el número total de plazas ofertadas entre todas las actividades.</li>
+<li class="">Calcula la media, el máximo y el mínimo del número de plazas de las actividades.</li>
 </ol>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>WHERE o HAVING</div><div class="admonitionContent_BuS1"><p>Antes de filtrar, decide si quieres eliminar:</p><ul>
-<li class=""><strong>filas antes de agrupar</strong> → <code>WHERE</code>;</li>
-<li class=""><strong>grupos después de agrupar</strong> → <code>HAVING</code>.</li>
-</ul></div></div>
+<div class="subtitulo-herramientas">Agrupamos con GROUP BY</div>
+<ol start="6">
+<li class="">Muestra el número de actividades de cada tipo.</li>
+<li class="">Muestra el número de usuarios inscritos en cada actividad, incluyendo aquellas que no tengan ninguna inscripción.</li>
+<li class="">Muestra el número de actividades en las que está inscrito cada usuario, incluyendo aquellos que no tengan ninguna inscripción.</li>
+</ol>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Recuerda</div><div class="admonitionContent_BuS1"><p>Cuando utilices composiciones externas como <code>LEFT JOIN</code>, piensa qué diferencia existe entre utilizar <code>COUNT(*)</code> y <code>COUNT(columna)</code>.</p></div></div>
+<div class="subtitulo-herramientas">Filtramos grupos con HAVING</div>
+<ol start="9">
+<li class="">Muestra los tipos que tengan más de dos actividades.</li>
+<li class="">Muestra las actividades que tengan más de dos usuarios inscritos.</li>
+<li class="">De las actividades que se celebran durante octubre, muestra únicamente los tipos que tengan más de una actividad.</li>
+</ol>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-12-trabajamos-con-subconsultas">🔸 Actividad 12. Trabajamos con subconsultas<a href="#-actividad-12-trabajamos-con-subconsultas" class="hash-link" aria-label="Direct link to 🔸 Actividad 12. Trabajamos con subconsultas" title="Direct link to 🔸 Actividad 12. Trabajamos con subconsultas" translate="no">​</a></h3>
-<p>Resuelve las siguientes consultas utilizando subconsultas:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-11-trabajamos-con-subconsultas">🔸 Actividad 11. Trabajamos con subconsultas<a href="#-actividad-11-trabajamos-con-subconsultas" class="hash-link" aria-label="Direct link to 🔸 Actividad 11. Trabajamos con subconsultas" title="Direct link to 🔸 Actividad 11. Trabajamos con subconsultas" translate="no">​</a></h3>
+<p>Resuelve las siguientes consultas utilizando subconsultas.</p>
+<div class="subtitulo-herramientas">Subconsultas que devuelven un único valor</div>
 <ol>
-<li class="">muestra las actividades cuyo número de plazas sea superior a la media de plazas de todas las actividades;</li>
-<li class="">muestra las actividades cuyo número de plazas sea igual al máximo registrado;</li>
-<li class="">muestra los usuarios que estén inscritos en alguna actividad de tipo <code>Naturaleza</code>;</li>
-<li class="">muestra los usuarios que estén inscritos en alguna actividad que se celebre durante noviembre;</li>
-<li class="">muestra las actividades en las que esté inscrito algún usuario cuyo nombre comience por una letra que elijas.</li>
+<li class="">Muestra las actividades cuyo número de plazas sea superior a la media de plazas de todas las actividades.</li>
+<li class="">Muestra las actividades cuyo número de plazas sea igual al máximo número de plazas existente.</li>
 </ol>
-<p>Para cada ejercicio:</p>
-<ol>
-<li class="">identifica primero qué debe devolver la subconsulta;</li>
-<li class="">ejecuta la subconsulta por separado y comprueba su resultado;</li>
-<li class="">incorpórala después dentro de la consulta exterior.</li>
+<div class="subtitulo-herramientas">Subconsultas que devuelven varios valores</div>
+<ol start="3">
+<li class="">Muestra los usuarios que estén inscritos en alguna actividad de tipo <code>Naturaleza</code>.</li>
+<li class="">Muestra los usuarios que estén inscritos en alguna actividad que se celebre durante noviembre.</li>
+<li class="">Muestra las actividades que pertenezcan a tipos que tengan más de dos actividades.</li>
 </ol>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Lee de dentro hacia fuera</div><div class="admonitionContent_BuS1"><p>Primero responde:</p><p><strong>¿Qué devuelve la consulta interior?</strong></p><p>Después:</p><p><strong>¿Cómo utiliza ese resultado la consulta exterior?</strong></p></div></div>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Antes de escribir la consulta</div><div class="admonitionContent_BuS1"><p>Cuando trabajes con una subconsulta, piensa primero:</p><ol>
+<li class=""><strong>¿Qué debe devolver la consulta interior?</strong></li>
+<li class=""><strong>¿Cómo utilizará ese resultado la consulta exterior?</strong></li>
+</ol></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4️⃣-todo-o-nada">4️⃣ Todo o nada<a href="#4️⃣-todo-o-nada" class="hash-link" aria-label="Direct link to 4️⃣ Todo o nada" title="Direct link to 4️⃣ Todo o nada" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-13-utilizamos-transacciones">🔸 Actividad 13. Utilizamos transacciones<a href="#-actividad-13-utilizamos-transacciones" class="hash-link" aria-label="Direct link to 🔸 Actividad 13. Utilizamos transacciones" title="Direct link to 🔸 Actividad 13. Utilizamos transacciones" translate="no">​</a></h3>
-<p>En esta actividad comprobaremos la diferencia entre <strong>ejecutar cambios</strong> y <strong>confirmarlos</strong>.</p>
-<div class="subtitulo-herramientas">Primera parte · Probamos COMMIT y ROLLBACK</div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-actividad-12-utilizamos-transacciones">🔸 Actividad 12. Utilizamos transacciones<a href="#-actividad-12-utilizamos-transacciones" class="hash-link" aria-label="Direct link to 🔸 Actividad 12. Utilizamos transacciones" title="Direct link to 🔸 Actividad 12. Utilizamos transacciones" translate="no">​</a></h3>
+<p>En esta actividad comprobaremos cómo podemos realizar cambios, revisar su resultado y decidir después si queremos <strong>confirmarlos o deshacerlos</strong>.</p>
+<div class="subtitulo-herramientas">Probamos ROLLBACK</div>
 <ol>
 <li class="">Consulta el número de plazas de una actividad y anota su valor.</li>
 <li class="">Inicia una transacción.</li>
 <li class="">Modifica temporalmente el número de plazas de esa actividad.</li>
-<li class="">Consulta de nuevo el registro y comprueba el cambio.</li>
+<li class="">Consulta de nuevo el registro y comprueba que el cambio se ha realizado.</li>
 <li class="">Ejecuta <code>ROLLBACK</code>.</li>
-<li class="">Vuelve a consultar la actividad y comprueba que recupera el valor anterior.</li>
+<li class="">Vuelve a consultar la actividad.</li>
 </ol>
-<p>Repite el proceso, pero esta vez finaliza con <code>COMMIT</code>.</p>
-<p>Comprueba qué ocurre cuando intentas realizar posteriormente un <code>ROLLBACK</code>.</p>
-<div class="subtitulo-herramientas">Segunda parte · Varias operaciones como una sola</div>
-<p>Realiza una nueva inscripción de un usuario en una actividad dentro de una transacción.</p>
-<p>Antes de confirmar:</p>
+<p>Comprueba que el número de plazas vuelve a tener el valor que tenía antes de iniciar la transacción.</p>
+<div class="subtitulo-herramientas">Probamos COMMIT</div>
+<p>Crea un <strong>usuario de prueba</strong> que utilizaremos únicamente en esta actividad.</p>
 <ol>
-<li class="">consulta los datos afectados;</li>
-<li class="">comprueba que la información es correcta;</li>
-<li class="">utiliza <code>COMMIT</code> si todo está bien.</li>
+<li class="">Inicia una nueva transacción.</li>
+<li class="">Inserta el usuario.</li>
+<li class="">Comprueba que aparece en la tabla.</li>
+<li class="">Confirma la transacción con <code>COMMIT</code>.</li>
+<li class="">Ejecuta después un <code>ROLLBACK</code>.</li>
+<li class="">Consulta de nuevo el usuario.</li>
 </ol>
-<p>Después repite el proceso con otra inscripción, pero utiliza <code>ROLLBACK</code> antes de confirmar.</p>
-<p>Comprueba que los cambios de esa segunda operación no quedan almacenados.</p>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Todo o nada</div><div class="admonitionContent_BuS1"><p>Al terminar, explica brevemente por qué una transacción resulta útil cuando varias modificaciones forman parte de una misma operación.</p></div></div>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-comprobación-final">✅ Comprobación final<a href="#-comprobación-final" class="hash-link" aria-label="Direct link to ✅ Comprobación final" title="Direct link to ✅ Comprobación final" translate="no">​</a></h2>
-<p>Antes de dar por terminada la práctica, comprueba:</p>
-<p>☐ El modelo E/R representa correctamente el problema.</p>
-<p>☐ El modelo relacional corresponde al modelo E/R.</p>
-<p>☐ Las claves y restricciones mantienen la integridad de los datos.</p>
-<p>☐ Las tablas se han creado respetando sus dependencias.</p>
-<p>☐ Los datos permiten realizar todas las consultas planteadas.</p>
-<p>☐ Las consultas con <code>JOIN</code> recorren correctamente las relaciones.</p>
-<p>☐ Las funciones de agregación y <code>GROUP BY</code> producen el resultado esperado.</p>
-<p>☐ Se distingue correctamente entre <code>WHERE</code> y <code>HAVING</code>.</p>
-<p>☐ Las subconsultas se han interpretado de dentro hacia fuera.</p>
-<p>☐ Se comprende la diferencia entre <code>COMMIT</code> y <code>ROLLBACK</code>.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/ASGBD/UT0/todo-o-nada"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">0.4 Todo o nada</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-de-la-realidad-a-las-tablas" class="table-of-contents__link toc-highlight">1️⃣ De la realidad a las tablas</a><ul><li><a href="#-actividad-1-analizamos-el-problema" class="table-of-contents__link toc-highlight">🔸 Actividad 1. Analizamos el problema</a></li><li><a href="#-actividad-2-diseñamos-el-modelo-er" class="table-of-contents__link toc-highlight">🔸 Actividad 2. Diseñamos el modelo E/R</a></li><li><a href="#-actividad-3-transformamos-al-modelo-relacional" class="table-of-contents__link toc-highlight">🔸 Actividad 3. Transformamos al modelo relacional</a></li><li><a href="#-actividad-4-definimos-las-restricciones" class="table-of-contents__link toc-highlight">🔸 Actividad 4. Definimos las restricciones</a></li></ul></li><li><a href="#2️⃣-volvemos-a-hablar-sql" class="table-of-contents__link toc-highlight">2️⃣ Volvemos a hablar SQL</a><ul><li><a href="#-actividad-5-creamos-la-base-de-datos-en-mysql" class="table-of-contents__link toc-highlight">🔸 Actividad 5. Creamos la base de datos en MySQL</a></li><li><a href="#-actividad-6-insertamos-los-datos" class="table-of-contents__link toc-highlight">🔸 Actividad 6. Insertamos los datos</a></li><li><a href="#-actividad-7-consultamos-y-filtramos-información" class="table-of-contents__link toc-highlight">🔸 Actividad 7. Consultamos y filtramos información</a></li><li><a href="#-actividad-8-ordenamos-y-limitamos-resultados" class="table-of-contents__link toc-highlight">🔸 Actividad 8. Ordenamos y limitamos resultados</a></li><li><a href="#-actividad-9-modificamos-y-eliminamos-datos" class="table-of-contents__link toc-highlight">🔸 Actividad 9. Modificamos y eliminamos datos</a></li></ul></li><li><a href="#3️⃣-los-datos-están-relacionados" class="table-of-contents__link toc-highlight">3️⃣ Los datos están relacionados</a><ul><li><a href="#-actividad-10-relacionamos-varias-tablas" class="table-of-contents__link toc-highlight">🔸 Actividad 10. Relacionamos varias tablas</a></li><li><a href="#-actividad-11-resumimos-y-agrupamos-información" class="table-of-contents__link toc-highlight">🔸 Actividad 11. Resumimos y agrupamos información</a></li><li><a href="#-actividad-12-trabajamos-con-subconsultas" class="table-of-contents__link toc-highlight">🔸 Actividad 12. Trabajamos con subconsultas</a></li></ul></li><li><a href="#4️⃣-todo-o-nada" class="table-of-contents__link toc-highlight">4️⃣ Todo o nada</a><ul><li><a href="#-actividad-13-utilizamos-transacciones" class="table-of-contents__link toc-highlight">🔸 Actividad 13. Utilizamos transacciones</a></li></ul></li><li><a href="#-comprobación-final" class="table-of-contents__link toc-highlight">✅ Comprobación final</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mordialros.github.io/">Apuntes de informática</a> by <span property="cc:attributionName">Begoña Ordiales Rosado</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+<p>Comprueba qué ocurre y explica por qué <code>ROLLBACK</code> ya no puede deshacer esa inserción.</p>
+<div class="subtitulo-herramientas">Varias operaciones como una sola</div>
+<p>Ahora utilizaremos el usuario de prueba para realizar una operación formada por varios cambios relacionados.</p>
+<ol>
+<li class="">Inicia una nueva transacción.</li>
+<li class="">Modifica algún dato del usuario de prueba.</li>
+<li class="">Inscríbelo en una actividad.</li>
+<li class="">Consulta las tablas afectadas y comprueba el resultado.</li>
+<li class="">Ejecuta <code>ROLLBACK</code>.</li>
+<li class="">Vuelve a consultar ambas tablas.</li>
+</ol>
+<p>Comprueba que <strong>ninguno de los cambios realizados dentro de la transacción se conserva</strong>.</p>
+<p>Repite el proceso realizando de nuevo las dos operaciones, pero esta vez termina con <code>COMMIT</code>.</p>
+<p>Comprueba que ambas quedan confirmadas.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Todo o nada</div><div class="admonitionContent_BuS1"><p>Al terminar, explica con tus propias palabras qué ocurriría si una de las operaciones de la transacción no pudiera realizarse correctamente y por qué resulta útil poder deshacer el conjunto completo.</p></div></div>
+<div class="subtitulo-herramientas">Dejamos los datos como estaban</div>
+<p>Elimina la inscripción y el usuario de prueba utilizados en esta actividad.</p>
+<p>Comprueba al terminar que la base de datos contiene de nuevo únicamente los datos utilizados durante el resto de la práctica.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/ASGBD/UT0/todo-o-nada"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">0.4 Todo o nada</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-de-la-realidad-a-las-tablas" class="table-of-contents__link toc-highlight">1️⃣ De la realidad a las tablas</a><ul><li><a href="#-actividad-1-analizamos-el-problema" class="table-of-contents__link toc-highlight">🔸 Actividad 1. Analizamos el problema</a></li><li><a href="#-actividad-2-diseñamos-el-modelo-er" class="table-of-contents__link toc-highlight">🔸 Actividad 2. Diseñamos el modelo E/R</a></li><li><a href="#-actividad-3-definimos-el-modelo-relacional" class="table-of-contents__link toc-highlight">🔸 Actividad 3. Definimos el modelo relacional</a></li></ul></li><li><a href="#2️⃣-volvemos-a-hablar-sql" class="table-of-contents__link toc-highlight">2️⃣ Volvemos a hablar SQL</a><ul><li><a href="#-actividad-4-creamos-la-base-de-datos-en-mysql" class="table-of-contents__link toc-highlight">🔸 Actividad 4. Creamos la base de datos en MySQL</a></li><li><a href="#-actividad-5-insertamos-los-datos" class="table-of-contents__link toc-highlight">🔸 Actividad 5. Insertamos los datos</a></li><li><a href="#-actividad-6-consultamos-y-filtramos-información" class="table-of-contents__link toc-highlight">🔸 Actividad 6. Consultamos y filtramos información</a></li><li><a href="#-actividad-7-ordenamos-y-limitamos-resultados" class="table-of-contents__link toc-highlight">🔸 Actividad 7. Ordenamos y limitamos resultados</a></li><li><a href="#-actividad-8-modificamos-y-eliminamos-datos" class="table-of-contents__link toc-highlight">🔸 Actividad 8. Modificamos y eliminamos datos</a></li></ul></li><li><a href="#3️⃣-los-datos-están-relacionados" class="table-of-contents__link toc-highlight">3️⃣ Los datos están relacionados</a><ul><li><a href="#-actividad-9-relacionamos-varias-tablas" class="table-of-contents__link toc-highlight">🔸 Actividad 9. Relacionamos varias tablas</a></li><li><a href="#-actividad-10-resumimos-y-agrupamos-información" class="table-of-contents__link toc-highlight">🔸 Actividad 10. Resumimos y agrupamos información</a></li><li><a href="#-actividad-11-trabajamos-con-subconsultas" class="table-of-contents__link toc-highlight">🔸 Actividad 11. Trabajamos con subconsultas</a></li></ul></li><li><a href="#4️⃣-todo-o-nada" class="table-of-contents__link toc-highlight">4️⃣ Todo o nada</a><ul><li><a href="#-actividad-12-utilizamos-transacciones" class="table-of-contents__link toc-highlight">🔸 Actividad 12. Utilizamos transacciones</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mordialros.github.io/">Apuntes de informática</a> by <span property="cc:attributionName">Begoña Ordiales Rosado</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
         <div style="text-align:center;"> 
           <p style="margin-top:8px;">
               <a href="mailto:mordialros@educacion.navarra.es">📧 mordialros@educacion.navarra.es</a>
