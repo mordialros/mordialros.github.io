@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mordialros.github.io/blog"/>
     <subtitle>Apuntes de Informática Blog</subtitle>
-    <icon>https://mordialros.github.io/img/estilo/begona.ico</icon>
+    <icon>https://mordialros.github.io/img/estilo/favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://mordialros.github.io/blog/welcome</id>
