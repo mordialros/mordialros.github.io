@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="640" height="298" preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 298" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="640" height="298"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-298)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="10" y="252.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,504) scale(1,-1)">Nuestra convención</text>
+			<rect x="200.0" y="241.0" width="100.0" height="30.0" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(83%,90%,96%); fill-rule: evenodd;"/>
+			<text x="220.3605" y="252.15" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,504) scale(1,-1)">EDITORIAL</text>
+			<rect x="535.0" y="241.0" width="90.0" height="30.0" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(83%,90%,96%); fill-rule: evenodd;"/>
+			<text x="562.8895" y="252.15" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,504) scale(1,-1)">LIBRO</text>
+			<polygon points="367 256, 415 278, 463 256, 415 234" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(90%,86%,96%); fill-rule: evenodd;"/>
+			<text x="391.669" y="252.15" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,504) scale(1,-1)">PUBLICA</text>
+			<path d="M 300,256 L 367,256 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<path d="M 463,256 L 535,256 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<text x="313.779" y="263.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,526) scale(1,-1)">(0,N)</text>
+			<text x="497.692" y="263.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,526) scale(1,-1)">(1,1)</text>
+			<path d="M 10,224 L 630,224 Z" style="stroke: rgb(78%,82%,86%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="10" y="180.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,360) scale(1,-1)">Parejas en el lado contrario</text>
+			<rect x="200.0" y="169.0" width="100.0" height="30.0" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(83%,90%,96%); fill-rule: evenodd;"/>
+			<text x="220.3605" y="180.15" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,360) scale(1,-1)">EDITORIAL</text>
+			<rect x="535.0" y="169.0" width="90.0" height="30.0" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(83%,90%,96%); fill-rule: evenodd;"/>
+			<text x="562.8895" y="180.15" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,360) scale(1,-1)">LIBRO</text>
+			<polygon points="367 184, 415 206, 463 184, 415 162" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(90%,86%,96%); fill-rule: evenodd;"/>
+			<text x="391.669" y="180.15" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,360) scale(1,-1)">PUBLICA</text>
+			<path d="M 300,184 L 367,184 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<path d="M 463,184 L 535,184 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<text x="314.692" y="191.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,382) scale(1,-1)">(1,1)</text>
+			<text x="496.779" y="191.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,382) scale(1,-1)">(0,N)</text>
+			<path d="M 10,152 L 630,152 Z" style="stroke: rgb(78%,82%,86%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="10" y="108.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,216) scale(1,-1)">Etiquetas 1/N</text>
+			<rect x="200.0" y="97.0" width="100.0" height="30.0" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(83%,90%,96%); fill-rule: evenodd;"/>
+			<text x="220.3605" y="108.15" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,216) scale(1,-1)">EDITORIAL</text>
+			<rect x="535.0" y="97.0" width="90.0" height="30.0" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(83%,90%,96%); fill-rule: evenodd;"/>
+			<text x="562.8895" y="108.15" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,216) scale(1,-1)">LIBRO</text>
+			<polygon points="367 112, 415 134, 463 112, 415 90" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(90%,86%,96%); fill-rule: evenodd;"/>
+			<text x="391.669" y="108.15" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,216) scale(1,-1)">PUBLICA</text>
+			<path d="M 300,112 L 367,112 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<path d="M 463,112 L 535,112 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<text x="322.942" y="119.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,238) scale(1,-1)">1</text>
+			<text x="505.029" y="119.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,238) scale(1,-1)">N</text>
+			<path d="M 10,80 L 630,80 Z" style="stroke: rgb(78%,82%,86%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="10" y="36.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,72) scale(1,-1)">Pata de gallo</text>
+			<rect x="200.0" y="25.0" width="100.0" height="30.0" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(83%,90%,96%); fill-rule: evenodd;"/>
+			<text x="220.3605" y="36.15" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,72) scale(1,-1)">EDITORIAL</text>
+			<rect x="535.0" y="25.0" width="90.0" height="30.0" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(83%,90%,96%); fill-rule: evenodd;"/>
+			<text x="562.8895" y="36.15" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,72) scale(1,-1)">LIBRO</text>
+			<path d="M 300,40 L 535,40 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<path d="M 310,33 L 310,47 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<path d="M 316,33 L 316,47 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<path d="M 523,40 L 535,48 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<path d="M 523,40 L 535,32 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<circle cx="516" cy="40.0" r="5" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>

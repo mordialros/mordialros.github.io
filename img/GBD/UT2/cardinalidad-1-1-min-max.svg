@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="520" height="70" preserveAspectRatio="xMinYMin meet" viewBox="0 0 520 70" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="520" height="70"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-70)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="28.0" y="16.0" width="84.0" height="30.0" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(83%,90%,96%); fill-rule: evenodd;"/>
+			<text x="42.802499999999995" y="27.15" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,54) scale(1,-1)">PERSONA</text>
+			<polygon points="212 31, 260 53, 308 31, 260 9" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(90%,86%,96%); fill-rule: evenodd;"/>
+			<text x="244.53875" y="27.15" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,54) scale(1,-1)">TIENE</text>
+			<rect x="403.3785" y="16.0" width="93.243" height="30.0" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1; fill: rgb(83%,90%,96%); fill-rule: evenodd;"/>
+			<text x="415.7735" y="27.15" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,54) scale(1,-1)">PASAPORTE</text>
+			<path d="M 112,31 L 212,31 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<path d="M 308,31 L 403.3785,31 Z" style="stroke: rgb(14%,18%,23%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<text x="130.692" y="38.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,76) scale(1,-1)">(0,1)</text>
+			<text x="362.0705" y="38.0" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(14%,18%,23%); stroke:none;" transform="translate(0,76) scale(1,-1)">(1,1)</text>
+		</g>
+	</g>
+</svg>
