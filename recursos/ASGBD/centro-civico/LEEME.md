@@ -2,7 +2,7 @@
 
 ## Preparación
 
-Utilizamos **MySQL Server 8.4 LTS** dentro de la VM del laboratorio. Antes de ejecutar los scripts, comprobamos la versión y que estamos conectados al servidor de la VM, no a otra instalación de MySQL del anfitrión.
+Utilizamos **MySQL Server 8.0** dentro de la VM del laboratorio. Antes de ejecutar los scripts, comprobamos la versión y que estamos conectados al servidor de la VM, no a otra instalación de MySQL del anfitrión.
 
 Descargamos los archivos **dentro de la VM** y los guardamos juntos en una misma carpeta.
 
@@ -11,6 +11,7 @@ Descargamos los archivos **dentro de la VM** y los guardamos juntos en una misma
 | **01-crear-centro-civico.sql** | Crea la base, las tablas, las claves y las restricciones. |
 | **02-cargar-datos.sql** | Carga los datos ficticios iniciales. Se ejecuta una sola vez. |
 | **03-comprobar-centro-civico.sql** | Consultas de solo lectura para verificar el resultado. |
+| **04-cuenta-laboratorio.sql** | Crea la cuenta limitada `lab_consulta` (UT3). Solo cuando lo indique la actividad. |
 | **00-reiniciar-centro-civico.sql** | Recuperación: elimina la base para volver a crearla. Solo cuando se indique. |
 | **modelo-relacional-centro-civico.png** | Modelo relacional de la base. |
 
@@ -24,7 +25,7 @@ mysql -u root -p < 02-cargar-datos.sql
 mysql -u root -p -t < 03-comprobar-centro-civico.sql
 ```
 
-Si `mysql` no se reconoce, utilizamos la ruta completa, por ejemplo `"C:\Program Files\MySQL\MySQL Server 8.4\bin\mysql.exe"`, o añadimos esa carpeta `bin` al PATH.
+Si `mysql` no se reconoce, utilizamos la ruta completa, por ejemplo `"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe"`, o añadimos esa carpeta `bin` al PATH.
 
 De esta forma, el cliente se detiene en el primer error. Si falla la carga, la conexión se cierra y MySQL deshace automáticamente la transacción: no queda ningún dato cargado.
 
