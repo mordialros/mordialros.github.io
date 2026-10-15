@@ -5,8 +5,8 @@
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">🔗 3. Cuando IT y OT se conectan | Apuntes de Informática</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://mordialros.github.io/docs/DASP/UT1/sesion-3"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="🔗 3. Cuando IT y OT se conectan | Apuntes de Informática"><meta data-rh="true" name="description" content="1️⃣ Tener datos no basta: tienen que llegar donde hacen falta"><meta data-rh="true" property="og:description" content="1️⃣ Tener datos no basta: tienen que llegar donde hacen falta"><link data-rh="true" rel="icon" href="/img/estilo/favicon.png"><link data-rh="true" rel="canonical" href="https://mordialros.github.io/docs/DASP/UT1/sesion-3"><link data-rh="true" rel="alternate" href="https://mordialros.github.io/docs/DASP/UT1/sesion-3" hreflang="en"><link data-rh="true" rel="alternate" href="https://mordialros.github.io/docs/DASP/UT1/sesion-3" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"UT1. Todo cambia al digitalizar","item":"https://mordialros.github.io/docs/DASP/UT1/"},{"@type":"ListItem","position":2,"name":"🔗 3. Cuando IT y OT se conectan","item":"https://mordialros.github.io/docs/DASP/UT1/sesion-3"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Apuntes de Informática RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Apuntes de Informática Atom Feed"><link rel="stylesheet" href="/assets/css/styles.21554e34.css">
-<script src="/assets/js/runtime~main.926cc978.js" defer="defer"></script>
-<script src="/assets/js/main.82205678.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.ddf661a5.js" defer="defer"></script>
+<script src="/assets/js/main.b6309112.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -35,20 +35,35 @@
 <li class=""><strong>IT</strong>, centrado principalmente en la información y los servicios digitales</li>
 <li class=""><strong>OT</strong>, centrado en supervisar o actuar sobre elementos físicos</li>
 </ul>
-<p>Cuando ambos entornos se conectan, la información procedente del mundo físico puede utilizarse en los sistemas de información de la empresa.</p>
-<p>Un ejemplo sencillo sería:</p>
-<p><strong>sensor de temperatura (OT) → sistema de monitorización → aviso a Sistemas (IT)</strong></p>
+<p>Durante mucho tiempo, en muchas empresas estos dos entornos han funcionado <strong>por separado</strong>. Los equipos que medían o controlaban algo físico recogían sus datos, pero esa información se quedaba en el propio equipo o solo la consultaba quien estaba cerca de él.</p>
+<p>Cuando ambos entornos se conectan, la información procedente del mundo físico puede utilizarse en los sistemas de información de la empresa. Así, un dato que nace en una sala, una máquina o una instalación puede llegar a las personas que gestionan, deciden o actúan.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="un-ejemplo-paso-a-paso">Un ejemplo paso a paso<a href="#un-ejemplo-paso-a-paso" class="hash-link" aria-label="Direct link to Un ejemplo paso a paso" title="Direct link to Un ejemplo paso a paso" translate="no">​</a></h3>
+<p>Pensemos en la sala técnica de Nexo Digital:</p>
+<div style="text-align:center;margin:1.5rem 0"><img src="/img/DASP/UT1/conexion-it-ot.png" alt="Flujo de información: el sensor de temperatura (OT) envía el dato a un sistema de monitorización, que avisa al área de Sistemas (IT), que revisa la climatización" style="max-width:900px;width:95%;height:auto"></div>
+<ol>
+<li class=""><strong>Dato.</strong> Un sensor de temperatura instalado en la sala mide las condiciones ambientales. Pertenece al entorno <strong>OT</strong>, porque supervisa una situación física.</li>
+<li class=""><strong>Sistema.</strong> El sensor envía sus medidas a un sistema de monitorización. Este sistema registra los datos y, si la temperatura supera el límite establecido, genera un aviso.</li>
+<li class=""><strong>Área.</strong> El aviso llega al área de <strong>Sistemas</strong>, que trabaja en el entorno <strong>IT</strong> con aplicaciones, equipos y herramientas de gestión.</li>
+<li class=""><strong>Acción.</strong> Sistemas revisa la sala y comprueba el funcionamiento de la climatización antes de que el problema afecte a los servidores.</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>El punto de conexión</div><div class="admonitionContent_BuS1"><p>El sistema de monitorización es el elemento que <strong>une ambos entornos</strong>: recibe datos del mundo físico y los convierte en información y avisos que pueden utilizarse en los sistemas IT.</p><p>Por eso en el esquema no lo situamos claramente en un lado, sino en la <strong>conexión</strong> entre los dos.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="lo-que-nos-interesa-analizar">Lo que nos interesa analizar<a href="#lo-que-nos-interesa-analizar" class="hash-link" aria-label="Direct link to Lo que nos interesa analizar" title="Direct link to Lo que nos interesa analizar" translate="no">​</a></h3>
 <p>No necesitamos estudiar ahora protocolos, redes industriales ni detalles técnicos.</p>
-<p>Lo importante es comprender <strong>qué información se genera, dónde debe llegar y para qué se utiliza</strong>.</p>
-<!-- -->
-<div style="text-align:center;margin:1.5rem 0"><img src="/img/DASP/UT1/conexion-it-ot.png" alt="Flujo de información desde un elemento OT hasta un sistema IT y una acción" style="max-width:850px;width:90%;height:auto"></div>
+<p>Lo importante es comprender el <strong>recorrido de la información</strong>:</p>
+<ul>
+<li class=""><strong>qué información se genera</strong></li>
+<li class=""><strong>dónde debe llegar</strong></li>
+<li class=""><strong>quién la utiliza</strong></li>
+<li class=""><strong>para qué se utiliza</strong></li>
+</ul>
+<p>Si alguno de estos pasos falla, el dato existe pero no sirve para actuar. Un sensor que mide correctamente la temperatura no evita ningún problema si su aviso no llega a nadie.</p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3️⃣-la-información-puede-desencadenar-una-acción">3️⃣ La información puede desencadenar una acción<a href="#3️⃣-la-información-puede-desencadenar-una-acción" class="hash-link" aria-label="Direct link to 3️⃣ La información puede desencadenar una acción" title="Direct link to 3️⃣ La información puede desencadenar una acción" translate="no">​</a></h2>
 <p>Una conexión entre sistemas tiene sentido cuando permite hacer algo útil con la información.</p>
 <p>Por ejemplo:</p>
-<table><thead><tr><th>Situación</th><th>Información que se obtiene</th><th>Acción posible</th></tr></thead><tbody><tr><td>La temperatura de la sala técnica supera un límite</td><td>Temperatura registrada por un sensor</td><td>Avisar a Sistemas para revisar climatización</td></tr><tr><td>Se produce un corte eléctrico</td><td>Estado del SAI</td><td>Avisar al personal responsable y revisar los equipos</td></tr><tr><td>Se registra un acceso a la sala técnica</td><td>Identidad, fecha y hora</td><td>Registrar quién ha accedido</td></tr><tr><td>Un servicio deja de responder</td><td>Estado del servicio</td><td>Generar un aviso para Soporte o Sistemas</td></tr></tbody></table>
+<table><thead><tr><th>Situación</th><th>Información que se obtiene</th><th>Acción posible</th></tr></thead><tbody><tr><td>La temperatura de la sala técnica supera un límite</td><td>Temperatura registrada por un sensor</td><td>Avisar a Sistemas para revisar climatización</td></tr><tr><td>Se produce un corte eléctrico</td><td>Estado del SAI</td><td>Avisar al personal responsable y revisar los equipos</td></tr><tr><td>Se registra un acceso a la sala técnica</td><td>Identidad, fecha y hora</td><td>Consultar quién accedió si se produce una incidencia</td></tr><tr><td>Un servicio deja de responder</td><td>Estado del servicio</td><td>Generar un aviso para Soporte o Sistemas</td></tr></tbody></table>
 <p>En todos los casos seguimos una idea parecida:</p>
-<p><strong>dato → información → decisión o acción</strong></p>
+<p><strong>dato → sistema → área → acción</strong></p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4️⃣-por-qué-es-importante-conectar-los-sistemas">4️⃣ ¿Por qué es importante conectar los sistemas?<a href="#4️⃣-por-qué-es-importante-conectar-los-sistemas" class="hash-link" aria-label="Direct link to 4️⃣ ¿Por qué es importante conectar los sistemas?" title="Direct link to 4️⃣ ¿Por qué es importante conectar los sistemas?" translate="no">​</a></h2>
 <p>Cuando la información circula de forma adecuada podemos:</p>
@@ -64,28 +79,13 @@
 <p>La tecnología aporta valor cuando la información <strong>se utiliza dentro del proceso de trabajo</strong>.</p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5️⃣-lo-aplicamos-a-nexo-digital">5️⃣ Lo aplicamos a Nexo Digital<a href="#5️⃣-lo-aplicamos-a-nexo-digital" class="hash-link" aria-label="Direct link to 5️⃣ Lo aplicamos a Nexo Digital" title="Direct link to 5️⃣ Lo aplicamos a Nexo Digital" translate="no">​</a></h2>
-<p>En Nexo Digital ya conocemos elementos IT y OT.</p>
-<p>Podemos imaginar ahora algunos flujos de información sencillos:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temperatura-de-la-sala-técnica">Temperatura de la sala técnica<a href="#temperatura-de-la-sala-técnica" class="hash-link" aria-label="Direct link to Temperatura de la sala técnica" title="Direct link to Temperatura de la sala técnica" translate="no">​</a></h3>
-<p><strong>sensor → sistema de monitorización → aviso a Sistemas → revisión de la climatización</strong></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="estado-del-sai">Estado del SAI<a href="#estado-del-sai" class="hash-link" aria-label="Direct link to Estado del SAI" title="Direct link to Estado del SAI" translate="no">​</a></h3>
-<p><strong>SAI → sistema de monitorización → aviso a Sistemas → comprobación del suministro eléctrico</strong></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="control-de-acceso">Control de acceso<a href="#control-de-acceso" class="hash-link" aria-label="Direct link to Control de acceso" title="Direct link to Control de acceso" translate="no">​</a></h3>
-<p><strong>lector de acceso → registro de entrada → consulta del registro cuando sea necesario</strong></p>
-<p>En estos ejemplos no nos interesa cómo se realiza técnicamente la conexión.</p>
-<p>Nos interesa identificar:</p>
-<p><strong>qué dato se genera → dónde llega → quién lo utiliza → qué acción permite realizar</strong></p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6️⃣-volvemos-a-nuestro-proceso">6️⃣ Volvemos a nuestro proceso<a href="#6️⃣-volvemos-a-nuestro-proceso" class="hash-link" aria-label="Direct link to 6️⃣ Volvemos a nuestro proceso" title="Direct link to 6️⃣ Volvemos a nuestro proceso" translate="no">​</a></h2>
-<p>En la Parte 1 mejoramos uno de los procesos de Nexo Digital.</p>
-<p>Aunque esos procesos son principalmente <strong>IT</strong>, también podemos revisar si la información circula correctamente entre las áreas implicadas.</p>
-<p>Nos preguntamos:</p>
-<ul>
-<li class="">¿qué información se genera?</li>
-<li class="">¿qué área la necesita?</li>
-<li class="">¿cómo debería llegar?</li>
-<li class="">¿qué podría ocurrir automáticamente?</li>
-</ul>
-<p>A continuación realizaremos la <strong>Actividad UT1. Parte 3 · Conectamos la información</strong>.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/DASP/UT1/actividad-ut1-parte-2"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Actividad UT1. Parte 2 · Identificamos IT y OT</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/DASP/UT1/nexo-digital-flujos-informacion"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Nexo Digital · Flujos de información</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-tener-datos-no-basta-tienen-que-llegar-donde-hacen-falta" class="table-of-contents__link toc-highlight">1️⃣ Tener datos no basta: tienen que llegar donde hacen falta</a></li><li><a href="#2️⃣-qué-significa-conectar-it-y-ot" class="table-of-contents__link toc-highlight">2️⃣ ¿Qué significa conectar IT y OT?</a></li><li><a href="#3️⃣-la-información-puede-desencadenar-una-acción" class="table-of-contents__link toc-highlight">3️⃣ La información puede desencadenar una acción</a></li><li><a href="#4️⃣-por-qué-es-importante-conectar-los-sistemas" class="table-of-contents__link toc-highlight">4️⃣ ¿Por qué es importante conectar los sistemas?</a></li><li><a href="#5️⃣-lo-aplicamos-a-nexo-digital" class="table-of-contents__link toc-highlight">5️⃣ Lo aplicamos a Nexo Digital</a><ul><li><a href="#temperatura-de-la-sala-técnica" class="table-of-contents__link toc-highlight">Temperatura de la sala técnica</a></li><li><a href="#estado-del-sai" class="table-of-contents__link toc-highlight">Estado del SAI</a></li><li><a href="#control-de-acceso" class="table-of-contents__link toc-highlight">Control de acceso</a></li></ul></li><li><a href="#6️⃣-volvemos-a-nuestro-proceso" class="table-of-contents__link toc-highlight">6️⃣ Volvemos a nuestro proceso</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">...</div></div></div></footer></div>
+<p>En el apartado <strong>Nexo Digital · Flujos de información</strong> se describen varios flujos de la empresa: los de la sala técnica y los que se producen entre áreas.</p>
+<p>En la actividad trabajaremos en dos pasos:</p>
+<ol>
+<li class=""><strong>Un flujo IT–OT de la sala técnica.</strong> Ya hemos visto resuelto el caso de la temperatura; ahora analizaremos el del <strong>SAI</strong>.</li>
+<li class=""><strong>Un flujo de nuestro propio proceso.</strong> Volvemos al proceso que mejoramos en la Parte 1. Aunque sea principalmente IT, la información también tiene que circular entre áreas, y revisaremos si llega a quien la necesita.</li>
+</ol>
+<p>En los dos casos nos fijamos en lo mismo: <strong>qué información se genera, a quién debe llegar y para qué sirve</strong>.</p>
+<p>A continuación realizaremos la <strong>Actividad UT1. Parte 3 · Conectamos la información</strong>.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/DASP/UT1/actividad-ut1-parte-2"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Actividad UT1. Parte 2 · Identificamos IT y OT</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/DASP/UT1/nexo-digital-flujos-informacion"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Nexo Digital · Flujos de información</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-tener-datos-no-basta-tienen-que-llegar-donde-hacen-falta" class="table-of-contents__link toc-highlight">1️⃣ Tener datos no basta: tienen que llegar donde hacen falta</a></li><li><a href="#2️⃣-qué-significa-conectar-it-y-ot" class="table-of-contents__link toc-highlight">2️⃣ ¿Qué significa conectar IT y OT?</a><ul><li><a href="#un-ejemplo-paso-a-paso" class="table-of-contents__link toc-highlight">Un ejemplo paso a paso</a></li><li><a href="#lo-que-nos-interesa-analizar" class="table-of-contents__link toc-highlight">Lo que nos interesa analizar</a></li></ul></li><li><a href="#3️⃣-la-información-puede-desencadenar-una-acción" class="table-of-contents__link toc-highlight">3️⃣ La información puede desencadenar una acción</a></li><li><a href="#4️⃣-por-qué-es-importante-conectar-los-sistemas" class="table-of-contents__link toc-highlight">4️⃣ ¿Por qué es importante conectar los sistemas?</a></li><li><a href="#5️⃣-lo-aplicamos-a-nexo-digital" class="table-of-contents__link toc-highlight">5️⃣ Lo aplicamos a Nexo Digital</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">...</div></div></div></footer></div>
 </body>
 </html>
