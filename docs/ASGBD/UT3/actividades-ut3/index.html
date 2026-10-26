@@ -5,8 +5,8 @@
 <meta name="generator" content="Docusaurus v3.10.2">
 <title data-rh="true">Actividades de la UT3 | Apuntes de Informática</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://mordialros.github.io/docs/ASGBD/UT3/actividades-ut3"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Actividades de la UT3 | Apuntes de Informática"><meta data-rh="true" name="description" content="Practicamos solos lo que hemos visto en clase. Trabajamos en la VM de Windows con MySQL Server y tenemos los apuntes abiertos para consultarlos."><meta data-rh="true" property="og:description" content="Practicamos solos lo que hemos visto en clase. Trabajamos en la VM de Windows con MySQL Server y tenemos los apuntes abiertos para consultarlos."><link data-rh="true" rel="icon" href="/img/estilo/favicon.png"><link data-rh="true" rel="canonical" href="https://mordialros.github.io/docs/ASGBD/UT3/actividades-ut3"><link data-rh="true" rel="alternate" href="https://mordialros.github.io/docs/ASGBD/UT3/actividades-ut3" hreflang="en"><link data-rh="true" rel="alternate" href="https://mordialros.github.io/docs/ASGBD/UT3/actividades-ut3" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"UT3. Poniendo a punto","item":"https://mordialros.github.io/docs/ASGBD/UT3/"},{"@type":"ListItem","position":2,"name":"3.8 Actividades de la UT3","item":"https://mordialros.github.io/docs/ASGBD/UT3/actividades-ut3"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Apuntes de Informática RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Apuntes de Informática Atom Feed"><link rel="stylesheet" href="/assets/css/styles.21554e34.css">
-<script src="/assets/js/runtime~main.79030996.js" defer="defer"></script>
-<script src="/assets/js/main.77f9199e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a32c1571.js" defer="defer"></script>
+<script src="/assets/js/main.3e8464d6.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -23,328 +23,67 @@
 <li class=""><strong>No hay que entregar nada.</strong> Las anotaciones también nos sirven para preparar la prueba individual.</li>
 </ul></div></div>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Si algo falla</div><div class="admonitionContent_BuS1"><table><thead><tr><th>Lo que vemos</th><th>Qué hacer</th></tr></thead><tbody><tr><td>Aparecen caracteres distintos de los que queremos escribir o pegar</td><td>Comprobamos el idioma y la distribución del teclado de la VM y revisamos las comillas y los símbolos antes de ejecutar.</td></tr><tr><td>La consola muestra <code>-&gt;</code>, <code>&#x27;&gt;</code> o <code>&quot;&gt;</code> en lugar de <code>mysql&gt;</code></td><td>Hay una instrucción incompleta. Con <code>-&gt;</code>, escribimos <code>\c</code> y pulsamos Intro para cancelarla. Con <code>&#x27;&gt;</code> o <code>&quot;&gt;</code>, cerramos primero la comilla correspondiente (<code>&#x27;</code> o <code>&quot;</code>) y, en la misma línea, escribimos <code>\c</code>. Pulsamos Intro y revisamos la instrucción antes de repetirla.</td></tr><tr><td><code>ERROR 1046 (No database selected)</code></td><td>Falta indicar la base de datos: ejecutamos <code>USE nombre_de_la_base;</code>.</td></tr><tr><td><code>Error de sistema 5. Acceso denegado</code> en <code>net stop</code> o <code>net start</code></td><td>Abrimos el Símbolo del sistema <strong>como administrador</strong>: Windows + R, escribimos <code>cmd</code> y pulsamos <strong>Ctrl + Mayús + Intro</strong>.</td></tr><tr><td><code>&quot;mysql&quot; no se reconoce como un comando</code></td><td>Usamos la ruta completa: <code>&quot;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&quot;</code>.</td></tr></tbody></table></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parte-1--ajustes-servicio-y-registro">Parte 1 · Ajustes, servicio y registro<a href="#parte-1--ajustes-servicio-y-registro" class="hash-link" aria-label="Direct link to Parte 1 · Ajustes, servicio y registro" title="Direct link to Parte 1 · Ajustes, servicio y registro" translate="no">​</a></h2>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-parte-1--ajustes-servicio-y-registro">⚙️ Parte 1 · Ajustes, servicio y registro<a href="#️-parte-1--ajustes-servicio-y-registro" class="hash-link" aria-label="Direct link to ⚙️ Parte 1 · Ajustes, servicio y registro" title="Direct link to ⚙️ Parte 1 · Ajustes, servicio y registro" translate="no">​</a></h2>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣-actividad-1-qué-ocurre-con-un-cambio-cuando-reiniciamos">1️⃣ Actividad 1. ¿Qué ocurre con un cambio cuando reiniciamos?<a href="#1️⃣-actividad-1-qué-ocurre-con-un-cambio-cuando-reiniciamos" class="hash-link" aria-label="Direct link to 1️⃣ Actividad 1. ¿Qué ocurre con un cambio cuando reiniciamos?" title="Direct link to 1️⃣ Actividad 1. ¿Qué ocurre con un cambio cuando reiniciamos?" translate="no">​</a></h2>
 <p><strong>Organización:</strong> individual, en clase.<br>
 <strong>Entrega:</strong> no. Anotamos en el cuaderno.<br>
 <strong>¿Qué vamos a trabajar?</strong> La diferencia entre un cambio que dura hasta reiniciar y un cambio que se guarda, y cómo dejar el servidor como estaba.<br>
 <strong>Evaluación:</strong> no evaluable. Prepara RA2.g y RA2.h para la prueba individual.<br>
 <strong>Recursos:</strong> apartados 3.2 y 3.3.</p>
-<p>🎯 <strong>Al terminar sabremos</strong> qué instrucción usar para que un cambio se conserve, o no, después de reiniciar.</p>
-<p>Vamos a cambiar el límite de conexiones (<code>max_connections</code>) de dos formas distintas. Usamos el valor <strong>40</strong> solo para esta prueba: no es una recomendación.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-1-anotamos-cómo-está-el-servidor">🔶 Paso 1. Anotamos cómo está el servidor<a href="#-paso-1-anotamos-cómo-está-el-servidor" class="hash-link" aria-label="Direct link to 🔶 Paso 1. Anotamos cómo está el servidor" title="Direct link to 🔶 Paso 1. Anotamos cómo está el servidor" translate="no">​</a></h3>
-<ol>
-<li class="">✍️ Consultamos el valor actual de <code>max_connections</code> y lo anotamos.</li>
-<li class="">Consultamos si hay un valor <strong>guardado para el próximo arranque</strong> (en <code>persisted_variables</code>).<!-- -->
-<ul>
-<li class="">✍️ Si sale <code>Empty set</code>, anotamos: <strong>«nada guardado»</strong>.</li>
-<li class="">✍️ Si sale una fila, anotamos el valor guardado.</li>
-</ul>
-</li>
-</ol>
-<p>Sin estos datos no podremos dejar el servidor como estaba.</p>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Si el valor actual ya es 40</div><div class="admonitionContent_BuS1"><p>Usamos 45 en todas las pruebas. Necesitamos un valor distinto del inicial para ver el cambio.</p></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-2-prueba-a-un-cambio-que-no-se-guarda">🔷 Paso 2. Prueba A: un cambio que <strong>no</strong> se guarda<a href="#-paso-2-prueba-a-un-cambio-que-no-se-guarda" class="hash-link" aria-label="Direct link to -paso-2-prueba-a-un-cambio-que-no-se-guarda" title="Direct link to -paso-2-prueba-a-un-cambio-que-no-se-guarda" translate="no">​</a></h3>
-<p>Queremos que el límite sea 40 <strong>solo mientras el servidor siga encendido</strong>.</p>
-<ol>
-<li class="">Elegimos la instrucción y la ejecutamos.</li>
-<li class="">Comprobamos que el valor actual es 40.</li>
-<li class="">✍️ <strong>Antes de reiniciar</strong>, anotamos qué valor esperamos ver después y por qué.</li>
-<li class="">Reiniciamos MySQL desde el <strong>Símbolo del sistema como administrador</strong>: primero <code>net stop MySQL80</code> y después <code>net start MySQL80</code>.</li>
-<li class="">Abrimos la consola de MySQL otra vez y consultamos el valor.</li>
-<li class="">¿Coincide con lo que esperábamos?</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-3-prueba-b-un-cambio-que-sí-se-guarda">🔶 Paso 3. Prueba B: un cambio que <strong>sí</strong> se guarda<a href="#-paso-3-prueba-b-un-cambio-que-sí-se-guarda" class="hash-link" aria-label="Direct link to -paso-3-prueba-b-un-cambio-que-sí-se-guarda" title="Direct link to -paso-3-prueba-b-un-cambio-que-sí-se-guarda" translate="no">​</a></h3>
-<p>Ahora queremos que el límite sea 40 <strong>y que siga siendo 40 después de reiniciar</strong>.</p>
-<ol>
-<li class="">Elegimos la instrucción y la ejecutamos.</li>
-<li class="">Comprobamos el valor actual y el valor guardado.</li>
-<li class="">✍️ <strong>Antes de reiniciar</strong>, anotamos qué valor esperamos ver después.</li>
-<li class="">Reiniciamos MySQL como en la prueba A.</li>
-<li class="">Consultamos el valor actual.</li>
-<li class="">✍️ Consultamos de dónde sale ese valor (<code>VARIABLE_SOURCE</code>) y lo anotamos.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-4-dejamos-el-servidor-como-estaba">🔷 Paso 4. Dejamos el servidor como estaba<a href="#-paso-4-dejamos-el-servidor-como-estaba" class="hash-link" aria-label="Direct link to 🔷 Paso 4. Dejamos el servidor como estaba" title="Direct link to 🔷 Paso 4. Dejamos el servidor como estaba" translate="no">​</a></h3>
-<p>Miramos lo que anotamos en el paso 1:</p>
-<table><thead><tr><th>Si en el paso 1 anotamos…</th><th>Hacemos…</th></tr></thead><tbody><tr><td>«Nada guardado»</td><td>Borramos lo guardado con <code>RESET PERSIST</code> y después devolvemos el valor inicial con <code>SET GLOBAL</code>.</td></tr><tr><td>Un valor guardado</td><td>Volvemos a guardar <strong>ese</strong> valor con <code>SET PERSIST</code>. Si el valor efectivo inicial era diferente, lo recuperamos después con <code>SET GLOBAL</code>.</td></tr></tbody></table>
-<p>Al final repetimos las dos consultas del paso 1. Tiene que salir <strong>lo mismo que anotamos al principio</strong>.</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>No suponemos que el valor inicial era 151. Usamos el valor que anotamos.</p></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-qué-anotamos-para-comentar-en-clase">✍️ Qué anotamos para comentar en clase<a href="#️-qué-anotamos-para-comentar-en-clase" class="hash-link" aria-label="Direct link to ✍️ Qué anotamos para comentar en clase" title="Direct link to ✍️ Qué anotamos para comentar en clase" translate="no">​</a></h3>
-<p>Llevamos esta tabla completa a la puesta en común.</p>
-<table><thead><tr><th></th><th>Instrucción que elegimos</th><th>Valor esperado tras reiniciar</th><th>Valor obtenido</th></tr></thead><tbody><tr><td>Prueba A</td><td></td><td></td><td></td></tr><tr><td>Prueba B</td><td></td><td></td><td></td></tr></tbody></table>
-<p>También llevamos anotados el estado inicial (paso 1), el origen del valor en la prueba B y el estado final (paso 4).</p>
-<p><strong>Para comentar en clase:</strong> justo después de cada cambio, las dos pruebas muestran 40. ¿Por qué eso no basta para saber si el cambio se ha guardado?</p>
+<p>📄 <a href="/assets/files/ut3-actividad-1-26196b7f7a4184ec28058b64be1ce87e.pdf" target="_blank" class="">Descargar el enunciado de la actividad 1 (PDF)</a></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2️⃣-actividad-2-podemos-dar-por-terminado-el-mantenimiento">2️⃣ Actividad 2. ¿Podemos dar por terminado el mantenimiento?<a href="#2️⃣-actividad-2-podemos-dar-por-terminado-el-mantenimiento" class="hash-link" aria-label="Direct link to 2️⃣ Actividad 2. ¿Podemos dar por terminado el mantenimiento?" title="Direct link to 2️⃣ Actividad 2. ¿Podemos dar por terminado el mantenimiento?" translate="no">​</a></h2>
 <p><strong>Organización:</strong> individual, en clase.<br>
 <strong>Entrega:</strong> no. Anotamos en el cuaderno.<br>
 <strong>¿Qué vamos a trabajar?</strong> Parar el servidor de forma controlada, arrancarlo y comprobar que vuelve a funcionar.<br>
 <strong>Evaluación:</strong> no evaluable. Prepara RA2.a y RA2.h para la prueba individual.<br>
 <strong>Recursos:</strong> apartado 3.3.</p>
-<p>🎯 <strong>Al terminar sabremos</strong> qué comprobaciones hacen falta para decir que un servidor vuelve a estar disponible.</p>
-<p>Somos responsables de un servidor MySQL que usan varias personas. Tenemos que pararlo y volver a arrancarlo. Antes de decir «ya podéis volver a trabajar», tenemos que <strong>demostrar</strong> que funciona.</p>
-<p>En clase lo paramos con <code>net stop</code>. Esta vez lo paramos <strong>desde la consola de MySQL</strong>.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-1-antes-de-parar">🔶 Paso 1. Antes de parar<a href="#-paso-1-antes-de-parar" class="hash-link" aria-label="Direct link to 🔶 Paso 1. Antes de parar" title="Direct link to 🔶 Paso 1. Antes de parar" translate="no">​</a></h3>
-<ol>
-<li class="">✍️ Escribimos en tres o cuatro líneas qué haríamos en un caso real antes de parar: a quién avisaríamos y qué revisaríamos.</li>
-<li class="">Comprobamos el <strong>tipo de inicio</strong> y el <strong>estado</strong> del servicio.</li>
-<li class="">Localizamos el archivo del registro de errores.</li>
-<li class="">Comprobamos si las horas del registro están en UTC.</li>
-<li class="">Cerramos las consolas de MySQL que no necesitemos. Dejamos <strong>solo una</strong> abierta.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-2-paramos-y-arrancamos">🔷 Paso 2. Paramos y arrancamos<a href="#-paso-2-paramos-y-arrancamos" class="hash-link" aria-label="Direct link to 🔷 Paso 2. Paramos y arrancamos" title="Direct link to 🔷 Paso 2. Paramos y arrancamos" translate="no">​</a></h3>
-<ol>
-<li class="">✍️ Anotamos la hora.</li>
-<li class="">Paramos MySQL <strong>desde la consola de MySQL</strong>.</li>
-<li class="">✍️ En esa misma consola, intentamos ejecutar <code>SELECT 1;</code>. Anotamos los errores que aparecen.</li>
-<li class="">En el Símbolo del sistema, comprobamos que el servicio está detenido.</li>
-<li class="">Arrancamos el servicio desde el <strong>Símbolo del sistema como administrador</strong>.</li>
-</ol>
-<p><strong>Pregunta:</strong> ¿podríamos haberlo arrancado desde la consola de MySQL? ¿Por qué?</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-3-comprobamos-que-funciona">🔶 Paso 3. Comprobamos que funciona<a href="#-paso-3-comprobamos-que-funciona" class="hash-link" aria-label="Direct link to 🔶 Paso 3. Comprobamos que funciona" title="Direct link to 🔶 Paso 3. Comprobamos que funciona" translate="no">​</a></h3>
-<p>Respondemos a dos preguntas distintas:</p>
-<ol>
-<li class=""><strong>¿El servidor responde?</strong> Abrimos una consola de MySQL nueva. Comprobamos que responde y cuánto tiempo lleva en marcha (<code>Uptime</code>).</li>
-<li class=""><strong>¿La parada y el arranque fueron bien?</strong> Abrimos el registro de errores y buscamos los mensajes de <strong>nuestra</strong> parada y <strong>nuestro</strong> arranque. Comprobamos que la hora coincide con la que anotamos.</li>
-</ol>
-<p>Por último, comprobamos que el tipo de inicio es <strong>automático</strong>. Si no lo es, lo cambiamos.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-qué-anotamos-para-comentar-en-clase-1">✍️ Qué anotamos para comentar en clase<a href="#️-qué-anotamos-para-comentar-en-clase-1" class="hash-link" aria-label="Direct link to ✍️ Qué anotamos para comentar en clase" title="Direct link to ✍️ Qué anotamos para comentar en clase" translate="no">​</a></h3>
-<p>Llevamos esta tabla completa a la puesta en común.</p>
-<table><thead><tr><th>Comprobación</th><th>Qué hemos visto</th><th>Qué demuestra</th></tr></thead><tbody><tr><td>Errores al consultar después de parar</td><td></td><td></td></tr><tr><td>Estado del servicio después de arrancar</td><td></td><td></td></tr><tr><td>Consulta en una conexión nueva</td><td></td><td></td></tr><tr><td>Tiempo desde el arranque (<code>Uptime</code>)</td><td></td><td></td></tr><tr><td>Mensajes de parada y arranque en el registro</td><td></td><td></td></tr><tr><td>Tipo de inicio del servicio</td><td></td><td></td></tr></tbody></table>
-<p>También llevamos anotado lo que haríamos antes de parar en un caso real (paso 1) y la respuesta a la pregunta del paso 2.</p>
-<p><strong>Para comentar en clase:</strong> ¿bastaría con ver <code>RUNNING</code> para decir que el mantenimiento ha terminado?</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-si-terminamos-antes">🔶 Si terminamos antes<a href="#-si-terminamos-antes" class="hash-link" aria-label="Direct link to 🔶 Si terminamos antes" title="Direct link to 🔶 Si terminamos antes" translate="no">​</a></h3>
-<p>Repetimos la parada con más detalle en el registro.</p>
-<ol>
-<li class="">✍️ Anotamos el valor actual de <code>log_error_verbosity</code>.</li>
-<li class="">Lo cambiamos a <code>3</code>.</li>
-<li class="">Paramos y arrancamos el servicio.</li>
-<li class="">Comparamos los mensajes nuevos con los de la parada anterior. ¿Qué información nueva aparece?</li>
-<li class="">Consultamos <code>log_error_verbosity</code>. ¿Sigue valiendo 3 después del reinicio? Relacionamos la respuesta con la actividad 1.</li>
-<li class="">Si no ha vuelto solo a su valor inicial, lo devolvemos.</li>
-</ol>
+<p>📄 <a href="/assets/files/ut3-actividad-2-f707f053d23f0602ab09008a1ef7f627.pdf" target="_blank" class="">Descargar el enunciado de la actividad 2 (PDF)</a></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3️⃣-actividad-3-el-servicio-no-arranca">3️⃣ Actividad 3. El servicio no arranca<a href="#3️⃣-actividad-3-el-servicio-no-arranca" class="hash-link" aria-label="Direct link to 3️⃣ Actividad 3. El servicio no arranca" title="Direct link to 3️⃣ Actividad 3. El servicio no arranca" translate="no">​</a></h2>
 <p><strong>Organización:</strong> individual, en clase.<br>
 <strong>Entrega:</strong> no. Anotamos en el cuaderno.<br>
 <strong>¿Qué vamos a trabajar?</strong> Hacer una copia de seguridad del archivo de configuración, encontrar la causa de un fallo de arranque en el registro de errores y recuperar el servicio.<br>
 <strong>Evaluación:</strong> no evaluable. Prepara RA2.a y RA2.h para la prueba individual.<br>
 <strong>Recursos:</strong> apartados 3.2 y 3.3.</p>
-<p>🎯 <strong>Al terminar sabremos</strong> encontrar por qué no arranca un servidor cuando no podemos usar SQL.</p>
-<p>Alguien ha modificado el archivo de configuración y, después de reiniciar, MySQL no arranca. Vamos a provocar ese fallo en nuestra VM para aprender a resolverlo. <strong>Mientras el servidor esté parado, no podremos usar SQL.</strong></p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Antes de tocar el archivo</div><div class="admonitionContent_BuS1"><p>Hacemos la copia de seguridad <strong>primero</strong> y comprobamos que existe. Si algo sale mal, recuperar la copia deja todo como estaba.</p></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-1-hacemos-la-copia">🔶 Paso 1. Hacemos la copia<a href="#-paso-1-hacemos-la-copia" class="hash-link" aria-label="Direct link to 🔶 Paso 1. Hacemos la copia" title="Direct link to 🔶 Paso 1. Hacemos la copia" translate="no">​</a></h3>
-<p>Antes de detener el servicio, con MySQL todavía funcionando, ✍️ anotamos también la <strong>ruta completa del registro de errores</strong> (a partir de <code>log_error</code> y <code>datadir</code>) y el <strong>valor efectivo de <code>max_connections</code></strong>. Necesitaremos ambos datos mientras el servidor esté detenido y al comprobar su recuperación.</p>
-<ol>
-<li class="">✍️ Buscamos la ruta del archivo <code>my.ini</code> que usa el servicio y la anotamos. Está en la salida de <code>sc.exe qc MySQL80</code>, en la línea <code>NOMBRE_RUTA_BINARIO</code>, después de <code>--defaults-file</code>.</li>
-<li class="">Abrimos el <strong>Símbolo del sistema como administrador</strong> y hacemos la copia. Si la ruta es la habitual:</li>
-</ol>
-<div class="language-bat codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bat codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">copy &quot;C:\ProgramData\MySQL\MySQL Server 8.0\my.ini&quot; &quot;C:\ProgramData\MySQL\MySQL Server 8.0\my.ini.copia&quot;</span><br></div></code></pre></div></div>
-<ol start="3">
-<li class="">Comprobamos que la copia existe:</li>
-</ol>
-<div class="language-bat codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bat codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">dir &quot;C:\ProgramData\MySQL\MySQL Server 8.0\my.ini*&quot;</span><br></div></code></pre></div></div>
-<p>Deben aparecer al menos <code>my.ini</code> y <code>my.ini.copia</code>. Si ya existe una copia de otra intervención, elegimos un nombre nuevo para no sobrescribirla y utilizamos ese nombre al recuperarla.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-2-introducimos-el-error">🔷 Paso 2. Introducimos el error<a href="#-paso-2-introducimos-el-error" class="hash-link" aria-label="Direct link to 🔷 Paso 2. Introducimos el error" title="Direct link to 🔷 Paso 2. Introducimos el error" translate="no">​</a></h3>
-<ol>
-<li class="">Desde el mismo Símbolo del sistema, abrimos <code>my.ini</code> con el Bloc de notas:</li>
-</ol>
-<div class="language-bat codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bat codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">notepad &quot;C:\ProgramData\MySQL\MySQL Server 8.0\my.ini&quot;</span><br></div></code></pre></div></div>
-<ol start="2">
-<li class="">Buscamos la línea <code>[mysqld]</code>.</li>
-<li class="">Justo debajo, añadimos esta línea. Está <strong>mal escrita a propósito</strong> (le falta una «n»):</li>
-</ol>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">max_conections=20</span><br></div></code></pre></div></div>
-<ol start="4">
-<li class="">Guardamos con <strong>Ctrl + G</strong> (o Ctrl + S). No cambiamos el nombre ni el tipo de archivo.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-3-provocamos-el-fallo">🔶 Paso 3. Provocamos el fallo<a href="#-paso-3-provocamos-el-fallo" class="hash-link" aria-label="Direct link to 🔶 Paso 3. Provocamos el fallo" title="Direct link to 🔶 Paso 3. Provocamos el fallo" translate="no">​</a></h3>
-<ol>
-<li class="">✍️ <strong>Antes de reiniciar</strong>, anotamos qué esperamos que ocurra y por qué.</li>
-<li class="">Paramos el servicio con <code>net stop MySQL80</code>.</li>
-<li class="">✍️ Intentamos arrancarlo con <code>net start MySQL80</code>. Anotamos el mensaje de Windows. ¿Explica la causa?</li>
-<li class="">Comprobamos el estado del servicio con <code>sc.exe query MySQL80</code>.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-4-buscamos-la-causa-en-el-registro">🔷 Paso 4. Buscamos la causa en el registro<a href="#-paso-4-buscamos-la-causa-en-el-registro" class="hash-link" aria-label="Direct link to 🔷 Paso 4. Buscamos la causa en el registro" title="Direct link to 🔷 Paso 4. Buscamos la causa en el registro" translate="no">​</a></h3>
-<p>Como MySQL no funciona, leemos el archivo directamente.</p>
-<ol>
-<li class="">Abrimos el archivo <code>.err</code> con el Explorador o con <code>Get-Content</code> en PowerShell.</li>
-<li class="">Vamos al <strong>final</strong> del archivo y buscamos el intento de arranque por la hora.</li>
-<li class="">Buscamos dos mensajes:<!-- -->
-<ul>
-<li class="">El que explica la <strong>causa</strong>.</li>
-<li class="">El que indica que se <strong>abandona</strong> el arranque.</li>
-</ul>
-</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-5-recuperamos-el-servicio">🔶 Paso 5. Recuperamos el servicio<a href="#-paso-5-recuperamos-el-servicio" class="hash-link" aria-label="Direct link to 🔶 Paso 5. Recuperamos el servicio" title="Direct link to 🔶 Paso 5. Recuperamos el servicio" translate="no">​</a></h3>
-<ol>
-<li class="">
-<p>Corregimos el problema. Tenemos dos opciones:</p>
-<ul>
-<li class="">Borrar la línea añadida en <code>my.ini</code>.</li>
-<li class="">Recuperar la copia: <code>copy &quot;...\my.ini.copia&quot; &quot;...\my.ini&quot;</code>.</li>
-</ul>
-<p>✍️ Anotamos cuál elegimos y por qué.</p>
-</li>
-<li class="">
-<p>Arrancamos el servicio y comprobamos que está en <code>RUNNING</code>.</p>
-</li>
-<li class="">
-<p>Abrimos la consola de MySQL y comprobamos que responde.</p>
-</li>
-<li class="">
-<p>Comprobamos que <code>max_connections</code> tiene el mismo valor que antes de la actividad.</p>
-</li>
-<li class="">
-<p>Conservamos <code>my.ini.copia</code> hasta la siguiente sesión.</p>
-</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-qué-anotamos-para-comentar-en-clase-2">✍️ Qué anotamos para comentar en clase<a href="#️-qué-anotamos-para-comentar-en-clase-2" class="hash-link" aria-label="Direct link to ✍️ Qué anotamos para comentar en clase" title="Direct link to ✍️ Qué anotamos para comentar en clase" translate="no">​</a></h3>
-<p>Llevamos esta tabla completa a la puesta en común.</p>
-<table><thead><tr><th>Momento</th><th>Qué hemos visto</th><th>Qué demuestra</th></tr></thead><tbody><tr><td>Lo que esperábamos que ocurriera</td><td></td><td></td></tr><tr><td>Mensaje de Windows al arrancar</td><td></td><td></td></tr><tr><td>Estado del servicio después del fallo</td><td></td><td></td></tr><tr><td>Mensajes del registro de errores</td><td></td><td></td></tr><tr><td>Corrección elegida</td><td></td><td></td></tr><tr><td>Comprobaciones después de recuperar</td><td></td><td></td></tr></tbody></table>
-<p><strong>Para comentar en clase:</strong> en esta actividad no podemos usar la consulta de <code>performance_schema.error_log</code> para leer el registro. ¿Por qué?</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parte-2--motor-textos-y-conexiones">Parte 2 · Motor, textos y conexiones<a href="#parte-2--motor-textos-y-conexiones" class="hash-link" aria-label="Direct link to Parte 2 · Motor, textos y conexiones" title="Direct link to Parte 2 · Motor, textos y conexiones" translate="no">​</a></h2>
+<p>📄 <a href="/assets/files/ut3-actividad-3-b2d30c39c3303f404fa87b2d322226f1.pdf" target="_blank" class="">Descargar el enunciado de la actividad 3 (PDF)</a></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-parte-2--motor-textos-y-conexiones">🗄️ Parte 2 · Motor, textos y conexiones<a href="#️-parte-2--motor-textos-y-conexiones" class="hash-link" aria-label="Direct link to 🗄️ Parte 2 · Motor, textos y conexiones" title="Direct link to 🗄️ Parte 2 · Motor, textos y conexiones" translate="no">​</a></h2>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4️⃣-actividad-4-qué-tablas-pueden-deshacer-sus-cambios">4️⃣ Actividad 4. ¿Qué tablas pueden deshacer sus cambios?<a href="#4️⃣-actividad-4-qué-tablas-pueden-deshacer-sus-cambios" class="hash-link" aria-label="Direct link to 4️⃣ Actividad 4. ¿Qué tablas pueden deshacer sus cambios?" title="Direct link to 4️⃣ Actividad 4. ¿Qué tablas pueden deshacer sus cambios?" translate="no">​</a></h2>
 <p><strong>Organización:</strong> individual, en clase.<br>
 <strong>Entrega:</strong> no. Anotamos en el cuaderno.<br>
 <strong>¿Qué vamos a trabajar?</strong> Consultar el motor de cada tabla, cambiar el motor de una tabla y comprobar su efecto en una transacción.<br>
 <strong>Evaluación:</strong> no evaluable. Prepara RA2.b y RA2.h para la prueba individual.<br>
 <strong>Recursos:</strong> apartados 3.2 y 3.4.</p>
-<p>🎯 <strong>Al terminar sabremos</strong> qué tablas pueden deshacer sus cambios y cómo convertir las que no pueden.</p>
-<p>Hemos recibido un servidor con varias tablas. Una aplicación va a agrupar operaciones en transacciones. Necesitamos saber qué tablas <strong>no</strong> podrían deshacer sus cambios si algo falla.</p>
-<p>Trabajamos con la base <code>pruebas_motores_ut3</code> que creamos en clase. Si no la tenemos, la creamos igual que en clase.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-1-hacemos-inventario">🔶 Paso 1. Hacemos inventario<a href="#-paso-1-hacemos-inventario" class="hash-link" aria-label="Direct link to 🔶 Paso 1. Hacemos inventario" title="Direct link to 🔶 Paso 1. Hacemos inventario" translate="no">​</a></h3>
-<ol>
-<li class="">Consultamos el motor por defecto del servidor.</li>
-<li class="">Consultamos el motor de todas las tablas de <code>pruebas_motores_ut3</code>.</li>
-<li class="">✍️ Anotamos qué tablas <strong>no</strong> admiten transacciones.</li>
-</ol>
-<p><strong>Reto (opcional):</strong> cambiamos la consulta del punto 2 para ver las tablas de <strong>todas</strong> las bases que no son del sistema. Las bases del sistema son <code>mysql</code>, <code>information_schema</code>, <code>performance_schema</code> y <code>sys</code>.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-2-convertimos-la-tabla-myisam">🔷 Paso 2. Convertimos la tabla MyISAM<a href="#-paso-2-convertimos-la-tabla-myisam" class="hash-link" aria-label="Direct link to 🔷 Paso 2. Convertimos la tabla MyISAM" title="Direct link to 🔷 Paso 2. Convertimos la tabla MyISAM" translate="no">​</a></h3>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Si ya la convertimos en clase</div><div class="admonitionContent_BuS1"><p>Si <code>t_myisam</code> ya utiliza InnoDB, la conversión de los apuntes ya está hecha. Para repetir la comparación sin modificar esa tabla, creamos una tabla de prueba independiente:</p><div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">CREATE</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">TABLE</span><span class="token plain"> pruebas_motores_ut3</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">t_myisam_actividad4 </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    id </span><span class="token keyword" style="color:#00009f">INT</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">PRIMARY</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">KEY</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">ENGINE</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> MyISAM</span><span class="token punctuation" style="color:#393A34">;</span><br></div></code></pre></div></div><p>Utilizamos <code>t_myisam_actividad4</code> en lugar de <code>t_myisam</code> en los pasos 2 y 3. Si ese nombre ya existe, elegimos otro nuevo. No borramos ni reconvertimos tablas de prácticas anteriores. En las anotaciones indicamos el nombre real de la tabla que hemos utilizado.</p></div></div>
-<ol>
-<li class="">✍️ Anotamos cuántas filas tiene la tabla MyISAM elegida (<code>t_myisam</code> o la nueva tabla de prueba).</li>
-<li class="">La convertimos a InnoDB con <code>ALTER TABLE</code>.</li>
-<li class="">Comprobamos que ahora su motor es InnoDB.</li>
-<li class="">Comprobamos que tiene las mismas filas que antes.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-3-repetimos-la-prueba-de-la-transacción">🔶 Paso 3. Repetimos la prueba de la transacción<a href="#-paso-3-repetimos-la-prueba-de-la-transacción" class="hash-link" aria-label="Direct link to 🔶 Paso 3. Repetimos la prueba de la transacción" title="Direct link to 🔶 Paso 3. Repetimos la prueba de la transacción" translate="no">​</a></h3>
-<ol>
-<li class="">✍️ <strong>Antes de ejecutar</strong>, anotamos qué esperamos ahora si insertamos una fila en cada tabla y hacemos <code>ROLLBACK</code>.</li>
-<li class="">Anotamos primero el número de filas de cada tabla. Hacemos la prueba con un identificador que no exista en ninguna de ellas. Si sale <code>ERROR 1062 (Duplicate entry)</code>, cancelamos esa prueba con <code>ROLLBACK</code> y la repetimos desde <code>START TRANSACTION</code> con otro identificador disponible en ambas tablas.</li>
-<li class="">Comprobamos si aparece algún aviso.</li>
-<li class="">Contamos las filas de cada tabla y comparamos con sus recuentos anteriores a la prueba. Ahora ambas deben conservar sus recuentos iniciales, aunque estos sean diferentes entre sí.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-4-una-tabla-sin-indicar-motor">🔷 Paso 4. Una tabla sin indicar motor<a href="#-paso-4-una-tabla-sin-indicar-motor" class="hash-link" aria-label="Direct link to 🔷 Paso 4. Una tabla sin indicar motor" title="Direct link to 🔷 Paso 4. Una tabla sin indicar motor" translate="no">​</a></h3>
-<ol>
-<li class="">Creamos en la misma base una tabla nueva <strong>sin escribir <code>ENGINE</code></strong>. Por ejemplo:</li>
-</ol>
-<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">CREATE</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">TABLE</span><span class="token plain"> t_sin_motor </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">id </span><span class="token keyword" style="color:#00009f">INT</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">PRIMARY</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">KEY</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></div></code></pre></div></div>
-<ol start="2">
-<li class="">Comprobamos qué motor ha recibido.</li>
-<li class="">✍️ Explicamos por qué.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-qué-anotamos-para-comentar-en-clase-3">✍️ Qué anotamos para comentar en clase<a href="#️-qué-anotamos-para-comentar-en-clase-3" class="hash-link" aria-label="Direct link to ✍️ Qué anotamos para comentar en clase" title="Direct link to ✍️ Qué anotamos para comentar en clase" translate="no">​</a></h3>
-<p>Llevamos esta tabla completa a la puesta en común.</p>
-<table><thead><tr><th>Comprobación</th><th>Qué hemos visto</th><th>Qué demuestra</th></tr></thead><tbody><tr><td>Motor por defecto del servidor</td><td></td><td></td></tr><tr><td>Tablas que no admiten transacciones</td><td></td><td></td></tr><tr><td>Motor de <code>t_myisam</code> después de convertirla</td><td></td><td></td></tr><tr><td>Filas de <code>t_myisam</code> antes y después de convertirla</td><td></td><td></td></tr><tr><td>Lo que esperábamos del <code>ROLLBACK</code></td><td></td><td></td></tr><tr><td>Resultado del <code>ROLLBACK</code> después de convertirla</td><td></td><td></td></tr><tr><td>Motor de <code>t_sin_motor</code></td><td></td><td></td></tr></tbody></table>
-<p><strong>Para comentar en clase:</strong> si cambiamos el motor por defecto del servidor, ¿cambian las tablas que ya existen?</p>
+<p>📄 <a href="/assets/files/ut3-actividad-4-ba9a1597fe8316843ad6c12626bac2bc.pdf" target="_blank" class="">Descargar el enunciado de la actividad 4 (PDF)</a></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5️⃣-actividad-5-las-bases-nuevas-deben-usar-las-reglas-del-español">5️⃣ Actividad 5. Las bases nuevas deben usar las reglas del español<a href="#5️⃣-actividad-5-las-bases-nuevas-deben-usar-las-reglas-del-español" class="hash-link" aria-label="Direct link to 5️⃣ Actividad 5. Las bases nuevas deben usar las reglas del español" title="Direct link to 5️⃣ Actividad 5. Las bases nuevas deben usar las reglas del español" translate="no">​</a></h2>
 <p><strong>Organización:</strong> individual, en clase.<br>
 <strong>Entrega:</strong> no. Anotamos en el cuaderno.<br>
 <strong>¿Qué vamos a trabajar?</strong> Cambiar los valores por defecto del servidor de forma que se guarden, comprobar qué recibe una base nueva y dejar el servidor como estaba.<br>
 <strong>Evaluación:</strong> no evaluable. Prepara RA2.f y RA2.h para la prueba individual.<br>
 <strong>Recursos:</strong> apartados 3.2 y 3.4.</p>
-<p>🎯 <strong>Al terminar sabremos</strong> cambiar lo que reciben las bases nuevas sin modificar las que ya existen.</p>
-<p><strong>El requisito:</strong> todas las bases que se creen a partir de ahora deben:</p>
-<ul>
-<li class="">guardar cualquier carácter;</li>
-<li class="">no distinguir mayúsculas ni acentos en las búsquedas;</li>
-<li class="">tratar la ñ como una letra distinta de la n.</li>
-</ul>
-<p>Y todo eso <strong>sin escribirlo en cada <code>CREATE DATABASE</code></strong>. Las bases que ya existen <strong>no</strong> deben cambiar.</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Esta actividad cambia dos variables</div><div class="admonitionContent_BuS1"><p>Son <code>character_set_server</code> y <code>collation_server</code>. Anotamos, cambiamos y recuperamos <strong>las dos</strong>.</p></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-1-elegimos-y-anotamos">🔶 Paso 1. Elegimos y anotamos<a href="#-paso-1-elegimos-y-anotamos" class="hash-link" aria-label="Direct link to 🔶 Paso 1. Elegimos y anotamos" title="Direct link to 🔶 Paso 1. Elegimos y anotamos" translate="no">​</a></h3>
-<ol>
-<li class="">✍️ Elegimos el juego de caracteres y el cotejamiento que cumplen el requisito. Anotamos en una línea por qué.</li>
-<li class="">✍️ Para <strong>cada una de las dos variables</strong>, anotamos su valor actual y si tiene un valor guardado con <code>SET PERSIST</code>.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-2-aplicamos-el-cambio">🔷 Paso 2. Aplicamos el cambio<a href="#-paso-2-aplicamos-el-cambio" class="hash-link" aria-label="Direct link to 🔷 Paso 2. Aplicamos el cambio" title="Direct link to 🔷 Paso 2. Aplicamos el cambio" translate="no">​</a></h3>
-<ol>
-<li class="">Aplicamos los valores elegidos de forma que <strong>se guarden</strong> para los siguientes arranques.</li>
-<li class="">Comprobamos, para las dos variables, el valor actual y el valor guardado.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-3-comprobamos-el-efecto">🔶 Paso 3. Comprobamos el efecto<a href="#-paso-3-comprobamos-el-efecto" class="hash-link" aria-label="Direct link to 🔶 Paso 3. Comprobamos el efecto" title="Direct link to 🔶 Paso 3. Comprobamos el efecto" translate="no">​</a></h3>
-<ol>
-<li class="">✍️ <strong>Antes de crear nada</strong>, anotamos qué cotejamiento esperamos que reciba una base nueva creada sin indicar nada.</li>
-<li class=""><strong>Cerramos la consola y abrimos una nueva.</strong> Así trabajamos con una conexión que ya tiene los valores nuevos.</li>
-<li class="">Creamos la base <code>prueba_requisito_ut3</code> sin indicar juego de caracteres ni cotejamiento.</li>
-<li class="">Consultamos en el diccionario de datos qué ha recibido.</li>
-<li class="">Consultamos también <code>textos_heredados_ut3</code>, la base que creamos en clase. Comprobamos que <strong>no ha cambiado</strong>.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-paso-4-dejamos-el-servidor-como-estaba-1">🔷 Paso 4. Dejamos el servidor como estaba<a href="#-paso-4-dejamos-el-servidor-como-estaba-1" class="hash-link" aria-label="Direct link to 🔷 Paso 4. Dejamos el servidor como estaba" title="Direct link to 🔷 Paso 4. Dejamos el servidor como estaba" translate="no">​</a></h3>
-<p>Hacemos esto <strong>para cada una de las dos variables</strong>:</p>
-<table><thead><tr><th>Si en el paso 1 anotamos…</th><th>Hacemos…</th></tr></thead><tbody><tr><td>Nada guardado</td><td><code>RESET PERSIST</code> y después <code>SET GLOBAL</code> con el valor inicial.</td></tr><tr><td>Un valor guardado</td><td><code>SET PERSIST</code> con ese valor. Si el valor efectivo inicial era diferente, lo recuperamos después con <code>SET GLOBAL</code>.</td></tr></tbody></table>
-<p>Después abrimos una consola nueva y comprobamos que todo está como al principio.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-qué-anotamos-para-comentar-en-clase-4">✍️ Qué anotamos para comentar en clase<a href="#️-qué-anotamos-para-comentar-en-clase-4" class="hash-link" aria-label="Direct link to ✍️ Qué anotamos para comentar en clase" title="Direct link to ✍️ Qué anotamos para comentar en clase" translate="no">​</a></h3>
-<p>Llevamos esta tabla completa a la puesta en común.</p>
-<table><thead><tr><th></th><th><code>character_set_server</code></th><th><code>collation_server</code></th></tr></thead><tbody><tr><td>Valor al principio</td><td></td><td></td></tr><tr><td>¿Había algo guardado al principio?</td><td></td><td></td></tr><tr><td>Valor después del cambio</td><td></td><td></td></tr><tr><td>Valor después de recuperar</td><td></td><td></td></tr></tbody></table>
-<table><thead><tr><th>Base</th><th>Cotejamiento esperado</th><th>Cotejamiento obtenido</th></tr></thead><tbody><tr><td><code>prueba_requisito_ut3</code></td><td></td><td></td></tr><tr><td><code>textos_heredados_ut3</code></td><td></td><td></td></tr></tbody></table>
-<p>También llevamos anotados el juego de caracteres y el cotejamiento elegidos, con su justificación.</p>
-<p><strong>Para comentar en clase:</strong> ¿por qué abrimos una consola nueva antes de crear la base? ¿Por qué <code>textos_heredados_ut3</code> no ha cambiado?</p>
+<p>📄 <a href="/assets/files/ut3-actividad-5-a1d14e023eb1fa5561c008d7afdfe33d.pdf" target="_blank" class="">Descargar el enunciado de la actividad 5 (PDF)</a></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6️⃣-actividad-6-cuántas-conexiones-y-durante-cuánto-tiempo">6️⃣ Actividad 6. ¿Cuántas conexiones y durante cuánto tiempo?<a href="#6️⃣-actividad-6-cuántas-conexiones-y-durante-cuánto-tiempo" class="hash-link" aria-label="Direct link to 6️⃣ Actividad 6. ¿Cuántas conexiones y durante cuánto tiempo?" title="Direct link to 6️⃣ Actividad 6. ¿Cuántas conexiones y durante cuánto tiempo?" translate="no">​</a></h2>
 <p><strong>Organización:</strong> individual, en clase.<br>
 <strong>Entrega:</strong> no. Anotamos en el cuaderno.<br>
 <strong>¿Qué vamos a trabajar?</strong> Calcular un límite de conexiones y comprobar qué tiempo de espera recibe cada tipo de conexión.<br>
 <strong>Evaluación:</strong> no evaluable. Prepara RA2.g y RA2.h para la prueba individual.<br>
 <strong>Recursos:</strong> apartados 3.2 y 3.5.</p>
-<p>🎯 <strong>Al terminar sabremos</strong> justificar un límite de conexiones y comprobar a qué conexiones afecta un cambio de tiempo de espera.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-parte-a-calculamos-un-límite">🔶 Parte A. Calculamos un límite<a href="#-parte-a-calculamos-un-límite" class="hash-link" aria-label="Direct link to 🔶 Parte A. Calculamos un límite" title="Direct link to 🔶 Parte A. Calculamos un límite" translate="no">​</a></h3>
-<p>En el momento de más trabajo hay:</p>
-<ul>
-<li class="">una aplicación con <strong>hasta 15 conexiones</strong> abiertas;</li>
-<li class=""><strong>dos herramientas de supervisión</strong>, con <strong>una conexión cada una</strong>;</li>
-<li class="">reservamos capacidad para <strong>una conexión de administración</strong>.</li>
-</ul>
-<p>Además, queremos un <strong>margen del 20 % sobre la suma de las conexiones previstas</strong>, incluida la de administración. Redondeamos hacia arriba el resultado final para obtener un número entero de conexiones.</p>
-<p>Reservar capacidad en esta estimación no garantiza que la administración pueda entrar en cualquier circunstancia. También influyen el uso real, los privilegios y los recursos del servidor.</p>
-<ol>
-<li class="">✍️ Calculamos el valor de <code>max_connections</code> que propondríamos. Escribimos el cálculo paso a paso.</li>
-<li class="">✍️ Indicamos qué más tendríamos que comprobar antes de darlo por bueno.</li>
-</ol>
-<p>En esta parte <strong>no cambiamos nada</strong> en el servidor.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-parte-b-interactivas-y-no-interactivas">🔷 Parte B. Interactivas y no interactivas<a href="#-parte-b-interactivas-y-no-interactivas" class="hash-link" aria-label="Direct link to 🔷 Parte B. Interactivas y no interactivas" title="Direct link to 🔷 Parte B. Interactivas y no interactivas" translate="no">​</a></h3>
-<p><strong>El requisito:</strong> las conexiones <strong>no interactivas</strong> que queden inactivas se cierran a los <strong>5 minutos</strong>. Las <strong>interactivas</strong> siguen igual.</p>
-<p>En esta prueba comparamos dos modos del cliente <code>mysql</code>: la consola habitual para escribir órdenes, que se identifica como <strong>interactiva</strong>, y la ejecución con <code>mysql -e</code>, que abre una conexión <strong>no interactiva</strong>, ejecuta la orden y termina.</p>
-<p>En general, la clasificación depende de cómo se identifica el cliente al conectarse. Una aplicación no interactiva también puede mantener conexiones abiertas. El cierre al terminar <code>mysql -e</code> no es una desconexión por inactividad.</p>
-<ol>
-<li class="">✍️ Anotamos el valor actual de <code>wait_timeout</code> y de <code>interactive_timeout</code>, y si <code>wait_timeout</code> tiene un valor guardado.</li>
-<li class="">✍️ Abrimos una segunda consola de MySQL y la dejamos abierta. La llamamos <strong>consola antigua</strong>. Anotamos su <code>wait_timeout</code> de sesión.</li>
-<li class="">Calculamos cuántos segundos son 5 minutos.</li>
-<li class="">En la primera consola, aplicamos ese valor a <code>wait_timeout</code> <strong>sin guardarlo</strong>: es una prueba.</li>
-<li class="">✍️ <strong>Antes de comprobar</strong>, completamos la columna «Valor esperado» de la tabla.</li>
-<li class="">Comprobamos el <code>wait_timeout</code> de sesión en tres conexiones:<!-- -->
-<ul>
-<li class=""><strong>No interactiva.</strong> En el Símbolo del sistema:</li>
-</ul>
-</li>
-</ol>
-<div class="language-bat codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bat codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">&quot;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&quot; -u root -p -e &quot;SELECT @@GLOBAL.wait_timeout, @@GLOBAL.interactive_timeout, @@SESSION.wait_timeout&quot;</span><br></div></code></pre></div></div>
-<ul>
-<li class=""><strong>Interactiva nueva.</strong> Abrimos una consola de MySQL nueva y consultamos <code>@@SESSION.wait_timeout</code>.</li>
-<li class=""><strong>Consola antigua.</strong> Consultamos <code>@@SESSION.wait_timeout</code> en la consola del punto 2.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-dejamos-el-servidor-como-estaba">🔶 Dejamos el servidor como estaba<a href="#-dejamos-el-servidor-como-estaba" class="hash-link" aria-label="Direct link to 🔶 Dejamos el servidor como estaba" title="Direct link to 🔶 Dejamos el servidor como estaba" translate="no">​</a></h3>
-<ol>
-<li class="">Devolvemos <code>wait_timeout</code> a su valor inicial con <code>SET GLOBAL</code>.</li>
-<li class="">Comprobamos el valor.</li>
-<li class="">Si al principio tenía un valor guardado, comprobamos que sigue igual.</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-qué-anotamos-para-comentar-en-clase-5">✍️ Qué anotamos para comentar en clase<a href="#️-qué-anotamos-para-comentar-en-clase-5" class="hash-link" aria-label="Direct link to ✍️ Qué anotamos para comentar en clase" title="Direct link to ✍️ Qué anotamos para comentar en clase" translate="no">​</a></h3>
-<p>Llevamos esta tabla completa a la puesta en común.</p>
-<table><thead><tr><th>Conexión</th><th>Valor esperado</th><th>Valor obtenido</th></tr></thead><tbody><tr><td>No interactiva (<code>mysql -e</code>)</td><td></td><td></td></tr><tr><td>Interactiva nueva</td><td></td><td></td></tr><tr><td>Consola antigua</td><td></td><td></td></tr></tbody></table>
-<p>También llevamos anotados el cálculo del límite de la parte A, paso a paso, y los valores iniciales de los tiempos de espera.</p>
-<p><strong>Para comentar en clase:</strong> ¿por qué la consola antigua no ha recibido el valor nuevo? ¿Qué tendríamos que hacer para que el requisito se mantuviera después de reiniciar?</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-si-terminamos-antes-1">🔶 Si terminamos antes<a href="#-si-terminamos-antes-1" class="hash-link" aria-label="Direct link to 🔶 Si terminamos antes" title="Direct link to 🔶 Si terminamos antes" translate="no">​</a></h3>
-<p>Provocamos el rechazo por límite de conexiones, siguiendo la prueba de límite temporal de los apuntes.</p>
-<p>✍️ Anotamos el error que recibe la conexión rechazada. Al terminar, dejamos el límite como estaba.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/ASGBD/UT3/clientes-e-interfaces"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">3.7. Clientes e interfaces estándar</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/ASGBD/UT3/anexo-referencia"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">📎 Anexo. Qué consultamos y dónde</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#parte-1--ajustes-servicio-y-registro" class="table-of-contents__link toc-highlight">Parte 1 · Ajustes, servicio y registro</a></li><li><a href="#1️⃣-actividad-1-qué-ocurre-con-un-cambio-cuando-reiniciamos" class="table-of-contents__link toc-highlight">1️⃣ Actividad 1. ¿Qué ocurre con un cambio cuando reiniciamos?</a><ul><li><a href="#-paso-1-anotamos-cómo-está-el-servidor" class="table-of-contents__link toc-highlight">🔶 Paso 1. Anotamos cómo está el servidor</a></li><li><a href="#-paso-2-prueba-a-un-cambio-que-no-se-guarda" class="table-of-contents__link toc-highlight">🔷 Paso 2. Prueba A: un cambio que <strong>no</strong> se guarda</a></li><li><a href="#-paso-3-prueba-b-un-cambio-que-sí-se-guarda" class="table-of-contents__link toc-highlight">🔶 Paso 3. Prueba B: un cambio que <strong>sí</strong> se guarda</a></li><li><a href="#-paso-4-dejamos-el-servidor-como-estaba" class="table-of-contents__link toc-highlight">🔷 Paso 4. Dejamos el servidor como estaba</a></li><li><a href="#️-qué-anotamos-para-comentar-en-clase" class="table-of-contents__link toc-highlight">✍️ Qué anotamos para comentar en clase</a></li></ul></li><li><a href="#2️⃣-actividad-2-podemos-dar-por-terminado-el-mantenimiento" class="table-of-contents__link toc-highlight">2️⃣ Actividad 2. ¿Podemos dar por terminado el mantenimiento?</a><ul><li><a href="#-paso-1-antes-de-parar" class="table-of-contents__link toc-highlight">🔶 Paso 1. Antes de parar</a></li><li><a href="#-paso-2-paramos-y-arrancamos" class="table-of-contents__link toc-highlight">🔷 Paso 2. Paramos y arrancamos</a></li><li><a href="#-paso-3-comprobamos-que-funciona" class="table-of-contents__link toc-highlight">🔶 Paso 3. Comprobamos que funciona</a></li><li><a href="#️-qué-anotamos-para-comentar-en-clase-1" class="table-of-contents__link toc-highlight">✍️ Qué anotamos para comentar en clase</a></li><li><a href="#-si-terminamos-antes" class="table-of-contents__link toc-highlight">🔶 Si terminamos antes</a></li></ul></li><li><a href="#3️⃣-actividad-3-el-servicio-no-arranca" class="table-of-contents__link toc-highlight">3️⃣ Actividad 3. El servicio no arranca</a><ul><li><a href="#-paso-1-hacemos-la-copia" class="table-of-contents__link toc-highlight">🔶 Paso 1. Hacemos la copia</a></li><li><a href="#-paso-2-introducimos-el-error" class="table-of-contents__link toc-highlight">🔷 Paso 2. Introducimos el error</a></li><li><a href="#-paso-3-provocamos-el-fallo" class="table-of-contents__link toc-highlight">🔶 Paso 3. Provocamos el fallo</a></li><li><a href="#-paso-4-buscamos-la-causa-en-el-registro" class="table-of-contents__link toc-highlight">🔷 Paso 4. Buscamos la causa en el registro</a></li><li><a href="#-paso-5-recuperamos-el-servicio" class="table-of-contents__link toc-highlight">🔶 Paso 5. Recuperamos el servicio</a></li><li><a href="#️-qué-anotamos-para-comentar-en-clase-2" class="table-of-contents__link toc-highlight">✍️ Qué anotamos para comentar en clase</a></li></ul></li><li><a href="#parte-2--motor-textos-y-conexiones" class="table-of-contents__link toc-highlight">Parte 2 · Motor, textos y conexiones</a></li><li><a href="#4️⃣-actividad-4-qué-tablas-pueden-deshacer-sus-cambios" class="table-of-contents__link toc-highlight">4️⃣ Actividad 4. ¿Qué tablas pueden deshacer sus cambios?</a><ul><li><a href="#-paso-1-hacemos-inventario" class="table-of-contents__link toc-highlight">🔶 Paso 1. Hacemos inventario</a></li><li><a href="#-paso-2-convertimos-la-tabla-myisam" class="table-of-contents__link toc-highlight">🔷 Paso 2. Convertimos la tabla MyISAM</a></li><li><a href="#-paso-3-repetimos-la-prueba-de-la-transacción" class="table-of-contents__link toc-highlight">🔶 Paso 3. Repetimos la prueba de la transacción</a></li><li><a href="#-paso-4-una-tabla-sin-indicar-motor" class="table-of-contents__link toc-highlight">🔷 Paso 4. Una tabla sin indicar motor</a></li><li><a href="#️-qué-anotamos-para-comentar-en-clase-3" class="table-of-contents__link toc-highlight">✍️ Qué anotamos para comentar en clase</a></li></ul></li><li><a href="#5️⃣-actividad-5-las-bases-nuevas-deben-usar-las-reglas-del-español" class="table-of-contents__link toc-highlight">5️⃣ Actividad 5. Las bases nuevas deben usar las reglas del español</a><ul><li><a href="#-paso-1-elegimos-y-anotamos" class="table-of-contents__link toc-highlight">🔶 Paso 1. Elegimos y anotamos</a></li><li><a href="#-paso-2-aplicamos-el-cambio" class="table-of-contents__link toc-highlight">🔷 Paso 2. Aplicamos el cambio</a></li><li><a href="#-paso-3-comprobamos-el-efecto" class="table-of-contents__link toc-highlight">🔶 Paso 3. Comprobamos el efecto</a></li><li><a href="#-paso-4-dejamos-el-servidor-como-estaba-1" class="table-of-contents__link toc-highlight">🔷 Paso 4. Dejamos el servidor como estaba</a></li><li><a href="#️-qué-anotamos-para-comentar-en-clase-4" class="table-of-contents__link toc-highlight">✍️ Qué anotamos para comentar en clase</a></li></ul></li><li><a href="#6️⃣-actividad-6-cuántas-conexiones-y-durante-cuánto-tiempo" class="table-of-contents__link toc-highlight">6️⃣ Actividad 6. ¿Cuántas conexiones y durante cuánto tiempo?</a><ul><li><a href="#-parte-a-calculamos-un-límite" class="table-of-contents__link toc-highlight">🔶 Parte A. Calculamos un límite</a></li><li><a href="#-parte-b-interactivas-y-no-interactivas" class="table-of-contents__link toc-highlight">🔷 Parte B. Interactivas y no interactivas</a></li><li><a href="#-dejamos-el-servidor-como-estaba" class="table-of-contents__link toc-highlight">🔶 Dejamos el servidor como estaba</a></li><li><a href="#️-qué-anotamos-para-comentar-en-clase-5" class="table-of-contents__link toc-highlight">✍️ Qué anotamos para comentar en clase</a></li><li><a href="#-si-terminamos-antes-1" class="table-of-contents__link toc-highlight">🔶 Si terminamos antes</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">...</div></div></div></footer></div>
+<p>📄 <a href="/assets/files/ut3-actividad-6-40b971eea811565146a4ffac1e6a8a1a.pdf" target="_blank" class="">Descargar el enunciado de la actividad 6 (PDF)</a></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-parte-3--acceso-desde-la-red-y-clientes">🌐 Parte 3 · Acceso desde la red y clientes<a href="#-parte-3--acceso-desde-la-red-y-clientes" class="hash-link" aria-label="Direct link to 🌐 Parte 3 · Acceso desde la red y clientes" title="Direct link to 🌐 Parte 3 · Acceso desde la red y clientes" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="7️⃣-actividad-7-puede-conectarse-el-anfitrión-sin-dejar-el-servidor-abierto-a-cualquiera">7️⃣ Actividad 7. ¿Puede conectarse el anfitrión sin dejar el servidor abierto a cualquiera?<a href="#7️⃣-actividad-7-puede-conectarse-el-anfitrión-sin-dejar-el-servidor-abierto-a-cualquiera" class="hash-link" aria-label="Direct link to 7️⃣ Actividad 7. ¿Puede conectarse el anfitrión sin dejar el servidor abierto a cualquiera?" title="Direct link to 7️⃣ Actividad 7. ¿Puede conectarse el anfitrión sin dejar el servidor abierto a cualquiera?" translate="no">​</a></h2>
+<p><strong>Organización:</strong> individual, en clase.<br>
+<strong>Entrega:</strong> no. Anotamos en el cuaderno.<br>
+<strong>¿Qué vamos a trabajar?</strong> Comprobar la red y la escucha de MySQL, autorizar únicamente al anfitrión y diferenciar un problema de conectividad de uno de autenticación.<br>
+<strong>Evaluación:</strong> no evaluable. Prepara RA2.c, RA2.e y RA2.h para la prueba individual.<br>
+<strong>Recursos:</strong> apartados 3.2 y 3.6.</p>
+<p>📄 <a href="/assets/files/ut3-actividad-7-7a1c9f4790e60252499271271ef52ef1.pdf" target="_blank" class="">Descargar el enunciado de la actividad 7 (PDF)</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="8️⃣-actividad-8-dos-clientes-un-mismo-servidor">8️⃣ Actividad 8. Dos clientes, un mismo servidor<a href="#8️⃣-actividad-8-dos-clientes-un-mismo-servidor" class="hash-link" aria-label="Direct link to 8️⃣ Actividad 8. Dos clientes, un mismo servidor" title="Direct link to 8️⃣ Actividad 8. Dos clientes, un mismo servidor" translate="no">​</a></h2>
+<p><strong>Organización:</strong> individual, en clase.<br>
+<strong>Entrega:</strong> no. Anotamos en el cuaderno.<br>
+<strong>¿Qué vamos a trabajar?</strong> Configurar un cliente gráfico y una conexión ODBC, verificar el servidor y reconocer dónde buscar cuando falla la conexión.<br>
+<strong>Evaluación:</strong> no evaluable. Prepara RA2.d y RA2.h para la prueba individual.<br>
+<strong>Recursos:</strong> apartados 3.6 y 3.7.</p>
+<p>📄 <a href="/assets/files/ut3-actividad-8-c49e6c5a609d6f40e2272626ded2f1ea.pdf" target="_blank" class="">Descargar el enunciado de la actividad 8 (PDF)</a></p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/ASGBD/UT3/clientes-e-interfaces"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">3.7. Clientes e interfaces estándar</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/ASGBD/UT3/anexo-referencia"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">📎 Anexo. Qué consultamos y dónde</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#️-parte-1--ajustes-servicio-y-registro" class="table-of-contents__link toc-highlight">⚙️ Parte 1 · Ajustes, servicio y registro</a></li><li><a href="#1️⃣-actividad-1-qué-ocurre-con-un-cambio-cuando-reiniciamos" class="table-of-contents__link toc-highlight">1️⃣ Actividad 1. ¿Qué ocurre con un cambio cuando reiniciamos?</a></li><li><a href="#2️⃣-actividad-2-podemos-dar-por-terminado-el-mantenimiento" class="table-of-contents__link toc-highlight">2️⃣ Actividad 2. ¿Podemos dar por terminado el mantenimiento?</a></li><li><a href="#3️⃣-actividad-3-el-servicio-no-arranca" class="table-of-contents__link toc-highlight">3️⃣ Actividad 3. El servicio no arranca</a></li><li><a href="#️-parte-2--motor-textos-y-conexiones" class="table-of-contents__link toc-highlight">🗄️ Parte 2 · Motor, textos y conexiones</a></li><li><a href="#4️⃣-actividad-4-qué-tablas-pueden-deshacer-sus-cambios" class="table-of-contents__link toc-highlight">4️⃣ Actividad 4. ¿Qué tablas pueden deshacer sus cambios?</a></li><li><a href="#5️⃣-actividad-5-las-bases-nuevas-deben-usar-las-reglas-del-español" class="table-of-contents__link toc-highlight">5️⃣ Actividad 5. Las bases nuevas deben usar las reglas del español</a></li><li><a href="#6️⃣-actividad-6-cuántas-conexiones-y-durante-cuánto-tiempo" class="table-of-contents__link toc-highlight">6️⃣ Actividad 6. ¿Cuántas conexiones y durante cuánto tiempo?</a></li><li><a href="#-parte-3--acceso-desde-la-red-y-clientes" class="table-of-contents__link toc-highlight">🌐 Parte 3 · Acceso desde la red y clientes</a></li><li><a href="#7️⃣-actividad-7-puede-conectarse-el-anfitrión-sin-dejar-el-servidor-abierto-a-cualquiera" class="table-of-contents__link toc-highlight">7️⃣ Actividad 7. ¿Puede conectarse el anfitrión sin dejar el servidor abierto a cualquiera?</a></li><li><a href="#8️⃣-actividad-8-dos-clientes-un-mismo-servidor" class="table-of-contents__link toc-highlight">8️⃣ Actividad 8. Dos clientes, un mismo servidor</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">...</div></div></div></footer></div>
 </body>
 </html>
