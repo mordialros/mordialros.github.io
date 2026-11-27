@@ -25,6 +25,15 @@ CREATE TABLE IF NOT EXISTS productos (
     CONSTRAINT chk_productos_stock CHECK (stock >= 0)
 ) ENGINE = InnoDB;
 
+-- Registro de ejecuciones para las prácticas con MySQL Event Scheduler (5.4 y 5.5).
+-- Se deja inicialmente vacío: los eventos añadirán las filas.
+CREATE TABLE IF NOT EXISTS registro_tareas (
+    id_registro INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_tarea VARCHAR(100) NOT NULL,
+    fecha_ejecucion DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    observaciones VARCHAR(255)
+) ENGINE = InnoDB;
+
 INSERT IGNORE INTO categorias (id_categoria, nombre) VALUES
 (1, 'Componentes'),
 (2, 'Perifericos'),
@@ -48,3 +57,6 @@ SELECT p.id_producto, p.nombre, c.nombre AS categoria, p.precio, p.stock
 FROM productos AS p
 JOIN categorias AS c ON c.id_categoria = p.id_categoria
 ORDER BY p.id_producto;
+
+-- El registro empieza vacío; las tareas programadas insertarán sus resultados.
+SELECT COUNT(*) AS total_registros_tareas FROM registro_tareas;
